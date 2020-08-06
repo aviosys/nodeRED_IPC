@@ -1,0 +1,15 @@
+{
+    "name": "IPPowerCenter",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red-contrib-mqtt-aviosys": "1.0.0",
+        "node-red-dashboard": "2.23.0"
+    },
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}

@@ -1,0 +1,1280 @@
+[
+    {
+        "id": "32aa2d05.3790a2",
+        "type": "tab",
+        "label": "IPC0806",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "302dcfdd.69433",
+        "type": "subflow",
+        "name": "Persistence Helper",
+        "info": "",
+        "in": [
+            {
+                "x": 45.5,
+                "y": 85,
+                "wires": [
+                    {
+                        "id": "7a2ab1d1.b5243"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 749.5,
+                "y": 53,
+                "wires": [
+                    {
+                        "id": "ef2890d7.16408",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 755,
+                "y": 169,
+                "wires": [
+                    {
+                        "id": "272e887.2299a78",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "5b070259.f99cdc",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "customize2",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": " ",
+        "birthQos": "0",
+        "birthPayload": "on line ",
+        "closeTopic": " ",
+        "closeQos": "0",
+        "closePayload": "off line",
+        "willTopic": " ",
+        "willQos": "0",
+        "willPayload": " break!!"
+    },
+    {
+        "id": "836421af.9fae4",
+        "type": "ui_group",
+        "z": "",
+        "name": "",
+        "tab": "c69f591.c4f5aa8",
+        "order": 3,
+        "disp": true,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "b34bead6.9dfe78",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#37465f",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#5b95e1",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#37465f",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#37465f",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#536a8f",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#37465f",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "IP Power Center",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 53,
+                "sy": 53,
+                "gx": 6,
+                "gy": 0,
+                "cx": 6,
+                "cy": 0,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "774ad28f.52b8bc",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "customize1",
+        "broker": "ippower.ddns.net",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "c69f591.c4f5aa8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IPC",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f66db79.9b04c48",
+        "type": "mqtt-aviosys-broker",
+        "z": "",
+        "name": "aviosys",
+        "broker": "",
+        "port": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ef2890d7.16408",
+        "type": "change",
+        "z": "302dcfdd.69433",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "restore",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 589.5,
+        "y": 53,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a2ab1d1.b5243",
+        "type": "json",
+        "z": "302dcfdd.69433",
+        "name": "",
+        "x": 175.5,
+        "y": 85,
+        "wires": [
+            [
+                "ef2890d7.16408"
+            ]
+        ]
+    },
+    {
+        "id": "8b62c83d.35e478",
+        "type": "catch",
+        "z": "302dcfdd.69433",
+        "name": "",
+        "scope": [
+            "7a2ab1d1.b5243"
+        ],
+        "x": 183.5,
+        "y": 117,
+        "wires": [
+            [
+                "ca028676.cb0ba8"
+            ]
+        ]
+    },
+    {
+        "id": "ca028676.cb0ba8",
+        "type": "change",
+        "z": "302dcfdd.69433",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 354.5,
+        "y": 116,
+        "wires": [
+            [
+                "ef2890d7.16408"
+            ]
+        ]
+    },
+    {
+        "id": "272e887.2299a78",
+        "type": "inject",
+        "z": "302dcfdd.69433",
+        "name": "Trigger restore",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 618.5,
+        "y": 169,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "888fe482.774ca8",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "GET UPDATE",
+        "url": "ui/update",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "7748b1c.0c0ff5"
+            ]
+        ]
+    },
+    {
+        "id": "7748b1c.0c0ff5",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "update ipcinfo",
+        "func": "\nvar fs = global.get('fs');\n\nif (typeof fs === 'undefined') {\nmsg.at=\"fs undefined\";   return  msg\n}\nif(typeof fs !== 'object') {\nmsg.at='Either fs or path from global context is not an object & it must be'\nreturn msg \n}\n\nipcfn=\"IPC/ipc/ipcinfo.txt\";\nif(flow.get(\"ipcfn\")=== undefined){ flow.set(\"ipcfn\",ipcfn);}\nipcfn=flow.get(\"ipcfn\");  \n\nfunction isEmpty(obj) {   \nfor(var key in obj) {\nif(obj.hasOwnProperty(key))\nreturn false;\n} \nreturn true;\n} \n\ndev =msg.payload;\ndevL={};\ndevL.gateway=\"\";\ndevL.dhcp=\"\";\ndevL.netmask=\"\";\ndevL.ver=\"\";\n\nipcinfo1 = flow.get(\"ipcinfo\"); \nif(flow.get(\"ipcinfo\")===undefined){ ipcinfo={};}\nelse{ ipcinfo=JSON.parse(ipcinfo1);}\n \nnewdev= { \n        [dev.group] : { \n            [dev.devmac] :{ \n                \"devname\": dev.devname, \"server\":dev.server,\"sport\":dev.sport,\"saccount\":dev.saccount,\"spasswd\":dev.spasswd,\n                \"devaccount\":dev.devaccount,\"devpasswd\":dev.devpasswd,\"devip\":dev.devip,\n                \"devport\":dev.devport,\"cnt\":dev.cnt,\n                \"devdhcp\":devL.dhcp,\n                \"gateway\":devL.gateway,\"netmask\":devL.netmask,\"ver\":devL.ver \n            }\n        }\n      };\nadddel = dev.adddel;\ngroup = dev.group;\ndevmac = dev.devmac;\nmsg.mac = dev.devmac;\nmsg.adddel = adddel;\n\nif((group.length===0) || group===undefined) return { payload:\"error group\"};\nif((devmac.length!==12) || devmac===undefined) return { payload:\"error MAC\"};\nif((group.length>32) || (dev.devname.length>32)||  (dev.server.length>32)|| (parseInt(dev.sport)>65534)||  (dev.saccount.length>32)||\ndev.spasswd.length>32 ||  dev.cnt.length!=1 ||  (parseInt(dev.devport)>65534) || dev.devaccount.length>32 || dev.devpasswd.length>32){ \nreturn { payload:\"error input\"};\n}\n\nif(adddel==\"ADD\"){\n    setinfo=0; \n    ipcinfos=ipcinfo;\n    for(var groups in ipcinfos) {  \n        gpc=ipcinfos[groups];\n        for(var maci in gpc) {  \n            if(maci==devmac) {\n            oldinfo=gpc[maci];\n            if(dev.devpasswd ==\"same\"){ newdev[group][devmac].devpasswd=gpc[maci].devpasswd;}\n            delete ipcinfo[groups][maci];\n            if(isEmpty(ipcinfo[groups])){ delete ipcinfo[groups];}\n            }\n        }\n    }\n    \n    if(ipcinfo[group]=== undefined) {  ipcinfo[group]={};}\n    if(ipcinfo[group][devmac]===undefined){ ipcinfo[group][devmac]={};}\n    ipcinfo[group][devmac]=newdev[group][devmac];  \n}// end of add\n\nif(adddel==\"UPDATE\"){\n    setinfo=0; \n    ipcinfos=ipcinfo;\n    for(var groups1 in ipcinfos) {  \n        gpc=ipcinfos[groups1];\n        for(var maci1 in gpc) {  \n            if(maci1==devmac) {\n            oldinfo=gpc[maci1];\n        \n            if(dev.devpasswd ==\"same\"){ newdev[group][devmac].devpasswd=gpc[maci1].devpasswd;}\n            if(ipcinfo[groups1][maci1].server==newdev[group][devmac].server){msg.adddel = \"xUPDATE\";} \n            delete ipcinfo[groups1][maci1];\n            if(isEmpty(ipcinfo[groups1])){ delete ipcinfo[groups1];}\n            }\n        }\n    }\n    \n    if(ipcinfo[group]=== undefined) {  ipcinfo[group]={};}\n    if(ipcinfo[group][devmac]===undefined){ ipcinfo[group][devmac]={};}\n    ipcinfo[group][devmac]=newdev[group][devmac];  \n}// end of add\n\nif(adddel==\"DELETE\"){  \ndelete ipcinfo[group][devmac]; \nif(Object.keys(ipcinfo[group])<1) { delete ipcinfo[group];}\n}\nif(adddel==\"chcekdev\"){ \nmsg.payload=\"newdev check...\" ;\n}\nmsg.ipcinfo= (JSON.stringify(ipcinfo)).replace(/\\s/g, '');\nfs.writeFileSync(ipcfn,msg.ipcinfo); \nflow.set(\"ipcinfo\",msg.ipcinfo);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 362,
+        "y": 160,
+        "wires": [
+            [
+                "765698d2.05f508",
+                "ba2f9277.e6188"
+            ]
+        ]
+    },
+    {
+        "id": "dd7d8ca5.2fcbf",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "get setpower",
+        "url": "ui/setcmd",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "a9cddee7.df9af",
+                "f4372023.884d2"
+            ]
+        ]
+    },
+    {
+        "id": "a9cddee7.df9af",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "device",
+        "func": "!function(t,n){\"object\"==typeof exports?module.exports=exports=n():\"function\"==typeof define&&define.amd?define([],n):t.CryptoJS=n()}(this,function(){var t=t||function(t,n){var e;if(\"undefined\"!=typeof window&&window.crypto&&(e=window.crypto),!e&&\"undefined\"!=typeof window&&window.msCrypto&&(e=window.msCrypto),!e&&\"undefined\"!=typeof global&&global.crypto&&(e=global.crypto),!e&&\"function\"==typeof require)try{e=require(\"crypto\")}catch(t){}var i=function(){if(e){if(\"function\"==typeof e.getRandomValues)try{return e.getRandomValues(new Uint32Array(1))[0]}catch(t){}if(\"function\"==typeof e.randomBytes)try{return e.randomBytes(4).readInt32LE()}catch(t){}}throw new Error(\"Native crypto module could not be used to get secure random number.\")},r=Object.create||function(){function t(){}return function(n){var e;return t.prototype=n,e=new t,t.prototype=null,e}}(),o={},s=o.lib={},a=s.Base={extend:function(t){var n=r(this);return t&&n.mixIn(t),n.hasOwnProperty(\"init\")&&this.init!==n.init||(n.init=function(){n.$super.init.apply(this,arguments)}),n.init.prototype=n,n.$super=this,n},create:function(){var t=this.extend();return t.init.apply(t,arguments),t},init:function(){},mixIn:function(t){for(var n in t)t.hasOwnProperty(n)&&(this[n]=t[n]);t.hasOwnProperty(\"toString\")&&(this.toString=t.toString)},clone:function(){return this.init.prototype.extend(this)}},c=s.WordArray=a.extend({init:function(t,n){t=this.words=t||[],this.sigBytes=null!=n?n:4*t.length},toString:function(t){return(t||f).stringify(this)},concat:function(t){var n=this.words,e=t.words,i=this.sigBytes,r=t.sigBytes;if(this.clamp(),i%4)for(var o=0;o<r;o++){var s=e[o>>>2]>>>24-o%4*8&255;n[i+o>>>2]|=s<<24-(i+o)%4*8}else for(o=0;o<r;o+=4)n[i+o>>>2]=e[o>>>2];return this.sigBytes+=r,this},clamp:function(){var n=this.words,e=this.sigBytes;n[e>>>2]&=4294967295<<32-e%4*8,n.length=t.ceil(e/4)},clone:function(){var t=a.clone.call(this);return t.words=this.words.slice(0),t},random:function(t){for(var n=[],e=0;e<t;e+=4)n.push(i());return new c.init(n,t)}}),u=o.enc={},f=u.Hex={stringify:function(t){for(var n=t.words,e=t.sigBytes,i=[],r=0;r<e;r++){var o=n[r>>>2]>>>24-r%4*8&255;i.push((o>>>4).toString(16)),i.push((15&o).toString(16))}return i.join(\"\")},parse:function(t){for(var n=t.length,e=[],i=0;i<n;i+=2)e[i>>>3]|=parseInt(t.substr(i,2),16)<<24-i%8*4;return new c.init(e,n/2)}},p=u.Latin1={stringify:function(t){for(var n=t.words,e=t.sigBytes,i=[],r=0;r<e;r++){var o=n[r>>>2]>>>24-r%4*8&255;i.push(String.fromCharCode(o))}return i.join(\"\")},parse:function(t){for(var n=t.length,e=[],i=0;i<n;i++)e[i>>>2]|=(255&t.charCodeAt(i))<<24-i%4*8;return new c.init(e,n)}},d=u.Utf8={stringify:function(t){try{return decodeURIComponent(escape(p.stringify(t)))}catch(t){throw new Error(\"Malformed UTF-8 data\")}},parse:function(t){return p.parse(unescape(encodeURIComponent(t)))}},h=s.BufferedBlockAlgorithm=a.extend({reset:function(){this._data=new c.init,this._nDataBytes=0},_append:function(t){\"string\"==typeof t&&(t=d.parse(t)),this._data.concat(t),this._nDataBytes+=t.sigBytes},_process:function(n){var e,i=this._data,r=i.words,o=i.sigBytes,s=this.blockSize,a=o/(4*s),u=(a=n?t.ceil(a):t.max((0|a)-this._minBufferSize,0))*s,f=t.min(4*u,o);if(u){for(var p=0;p<u;p+=s)this._doProcessBlock(r,p);e=r.splice(0,u),i.sigBytes-=f}return new c.init(e,f)},clone:function(){var t=a.clone.call(this);return t._data=this._data.clone(),t},_minBufferSize:0}),l=(s.Hasher=h.extend({cfg:a.extend(),init:function(t){this.cfg=this.cfg.extend(t),this.reset()},reset:function(){h.reset.call(this),this._doReset()},update:function(t){return this._append(t),this._process(),this},finalize:function(t){return t&&this._append(t),this._doFinalize()},blockSize:16,_createHelper:function(t){return function(n,e){return new t.init(e).finalize(n)}},_createHmacHelper:function(t){return function(n,e){return new l.HMAC.init(t,e).finalize(n)}}}),o.algo={});return o}(Math);return t});\n!function(e,t,r){\"object\"==typeof exports?module.exports=exports=t(require(\"./core\"),require(\"./evpkdf\")):\"function\"==typeof define&&define.amd?define([\"./core\",\"./evpkdf\"],t):t(e.CryptoJS)}(this,function(e){e.lib.Cipher||function(t){var r=e,i=r.lib,n=i.Base,c=i.WordArray,o=i.BufferedBlockAlgorithm,s=r.enc,a=(s.Utf8,s.Base64),f=r.algo.EvpKDF,p=i.Cipher=o.extend({cfg:n.extend(),createEncryptor:function(e,t){return this.create(this._ENC_XFORM_MODE,e,t)},createDecryptor:function(e,t){return this.create(this._DEC_XFORM_MODE,e,t)},init:function(e,t,r){this.cfg=this.cfg.extend(r),this._xformMode=e,this._key=t,this.reset()},reset:function(){o.reset.call(this),this._doReset()},process:function(e){return this._append(e),this._process()},finalize:function(e){return e&&this._append(e),this._doFinalize()},keySize:4,ivSize:4,_ENC_XFORM_MODE:1,_DEC_XFORM_MODE:2,_createHelper:function(){function e(e){return\"string\"==typeof e?x:v}return function(t){return{encrypt:function(r,i,n){return e(i).encrypt(t,r,i,n)},decrypt:function(r,i,n){return e(i).decrypt(t,r,i,n)}}}}()}),d=(i.StreamCipher=p.extend({_doFinalize:function(){return this._process(!0)},blockSize:1}),r.mode={}),h=i.BlockCipherMode=n.extend({createEncryptor:function(e,t){return this.Encryptor.create(e,t)},createDecryptor:function(e,t){return this.Decryptor.create(e,t)},init:function(e,t){this._cipher=e,this._iv=t}}),u=d.CBC=function(){var e=h.extend();function r(e,r,i){var n,c=this._iv;c?(n=c,this._iv=t):n=this._prevBlock;for(var o=0;o<i;o++)e[r+o]^=n[o]}return e.Encryptor=e.extend({processBlock:function(e,t){var i=this._cipher,n=i.blockSize;r.call(this,e,t,n),i.encryptBlock(e,t),this._prevBlock=e.slice(t,t+n)}}),e.Decryptor=e.extend({processBlock:function(e,t){var i=this._cipher,n=i.blockSize,c=e.slice(t,t+n);i.decryptBlock(e,t),r.call(this,e,t,n),this._prevBlock=c}}),e}(),_=(r.pad={}).Pkcs7={pad:function(e,t){for(var r=4*t,i=r-e.sigBytes%r,n=i<<24|i<<16|i<<8|i,o=[],s=0;s<i;s+=4)o.push(n);var a=c.create(o,i);e.concat(a)},unpad:function(e){var t=255&e.words[e.sigBytes-1>>>2];e.sigBytes-=t}},l=(i.BlockCipher=p.extend({cfg:p.cfg.extend({mode:u,padding:_}),reset:function(){var e;p.reset.call(this);var t=this.cfg,r=t.iv,i=t.mode;this._xformMode==this._ENC_XFORM_MODE?e=i.createEncryptor:(e=i.createDecryptor,this._minBufferSize=1),this._mode&&this._mode.__creator==e?this._mode.init(this,r&&r.words):(this._mode=e.call(i,this,r&&r.words),this._mode.__creator=e)},_doProcessBlock:function(e,t){this._mode.processBlock(e,t)},_doFinalize:function(){var e,t=this.cfg.padding;return this._xformMode==this._ENC_XFORM_MODE?(t.pad(this._data,this.blockSize),e=this._process(!0)):(e=this._process(!0),t.unpad(e)),e},blockSize:4}),i.CipherParams=n.extend({init:function(e){this.mixIn(e)},toString:function(e){return(e||this.formatter).stringify(this)}})),y=(r.format={}).OpenSSL={stringify:function(e){var t=e.ciphertext,r=e.salt;return(r?c.create([1398893684,1701076831]).concat(r).concat(t):t).toString(a)},parse:function(e){var t,r=a.parse(e),i=r.words;return 1398893684==i[0]&&1701076831==i[1]&&(t=c.create(i.slice(2,4)),i.splice(0,4),r.sigBytes-=16),l.create({ciphertext:r,salt:t})}},v=i.SerializableCipher=n.extend({cfg:n.extend({format:y}),encrypt:function(e,t,r,i){i=this.cfg.extend(i);var n=e.createEncryptor(r,i),c=n.finalize(t),o=n.cfg;return l.create({ciphertext:c,key:r,iv:o.iv,algorithm:e,mode:o.mode,padding:o.padding,blockSize:e.blockSize,formatter:i.format})},decrypt:function(e,t,r,i){return i=this.cfg.extend(i),t=this._parse(t,i.format),e.createDecryptor(r,i).finalize(t.ciphertext)},_parse:function(e,t){return\"string\"==typeof e?t.parse(e,this):e}}),k=(r.kdf={}).OpenSSL={execute:function(e,t,r,i){i||(i=c.random(8));var n=f.create({keySize:t+r}).compute(e,i),o=c.create(n.words.slice(t),4*r);return n.sigBytes=4*t,l.create({key:n,iv:o,salt:i})}},x=i.PasswordBasedCipher=v.extend({cfg:v.cfg.extend({kdf:k}),encrypt:function(e,t,r,i){var n=(i=this.cfg.extend(i)).kdf.execute(r,e.keySize,e.ivSize);i.iv=n.iv;var c=v.encrypt.call(this,e,t,n.key,i);return c.mixIn(n),c},decrypt:function(e,t,r,i){i=this.cfg.extend(i),t=this._parse(t,i.format);var n=i.kdf.execute(r,e.keySize,e.ivSize,t.salt);return i.iv=n.iv,v.decrypt.call(this,e,t,n.key,i)}})}()}); function getpayload(e){return CryptoJS.AES.encrypt(e,CryptoJS.enc.Utf8.parse((password+\"H7%y6#t8_p8Ah6$9\").substring(0,16)),{iv:CryptoJS.enc.Utf8.parse(\"h8_Ydw#avio%+5uM\")}).toString()};\n!function(e,r,i){\"object\"==typeof exports?module.exports=exports=r(require(\"./core\"),require(\"./enc-base64\"),require(\"./md5\"),require(\"./evpkdf\"),require(\"./cipher-core\")):\"function\"==typeof define&&define.amd?define([\"./core\",\"./enc-base64\",\"./md5\",\"./evpkdf\",\"./cipher-core\"],r):r(e.CryptoJS)}(this,function(e){return function(){var r=e,i=r.lib.BlockCipher,o=r.algo,t=[],n=[],c=[],s=[],d=[],f=[],u=[],h=[],y=[],a=[];!function(){for(var e=[],r=0;r<256;r++)e[r]=r<128?r<<1:r<<1^283;var i=0,o=0;for(r=0;r<256;r++){var p=o^o<<1^o<<2^o<<3^o<<4;p=p>>>8^255&p^99,t[i]=p,n[p]=i;var v=e[i],_=e[v],k=e[_],l=257*e[p]^16843008*p;c[i]=l<<24|l>>>8,s[i]=l<<16|l>>>16,d[i]=l<<8|l>>>24,f[i]=l;l=16843009*k^65537*_^257*v^16843008*i;u[p]=l<<24|l>>>8,h[p]=l<<16|l>>>16,y[p]=l<<8|l>>>24,a[p]=l,i?(i=v^e[e[e[k^v]]],o^=e[e[o]]):i=o=1}}();var p=[0,1,2,4,8,16,32,64,128,27,54],v=o.AES=i.extend({_doReset:function(){if(!this._nRounds||this._keyPriorReset!==this._key){for(var e=this._keyPriorReset=this._key,r=e.words,i=e.sigBytes/4,o=4*((this._nRounds=i+6)+1),n=this._keySchedule=[],c=0;c<o;c++)c<i?n[c]=r[c]:(f=n[c-1],c%i?i>6&&c%i==4&&(f=t[f>>>24]<<24|t[f>>>16&255]<<16|t[f>>>8&255]<<8|t[255&f]):(f=t[(f=f<<8|f>>>24)>>>24]<<24|t[f>>>16&255]<<16|t[f>>>8&255]<<8|t[255&f],f^=p[c/i|0]<<24),n[c]=n[c-i]^f);for(var s=this._invKeySchedule=[],d=0;d<o;d++){c=o-d;if(d%4)var f=n[c];else f=n[c-4];s[d]=d<4||c<=4?f:u[t[f>>>24]]^h[t[f>>>16&255]]^y[t[f>>>8&255]]^a[t[255&f]]}}},encryptBlock:function(e,r){this._doCryptBlock(e,r,this._keySchedule,c,s,d,f,t)},decryptBlock:function(e,r){var i=e[r+1];e[r+1]=e[r+3],e[r+3]=i,this._doCryptBlock(e,r,this._invKeySchedule,u,h,y,a,n);i=e[r+1];e[r+1]=e[r+3],e[r+3]=i},_doCryptBlock:function(e,r,i,o,t,n,c,s){for(var d=this._nRounds,f=e[r]^i[0],u=e[r+1]^i[1],h=e[r+2]^i[2],y=e[r+3]^i[3],a=4,p=1;p<d;p++){var v=o[f>>>24]^t[u>>>16&255]^n[h>>>8&255]^c[255&y]^i[a++],_=o[u>>>24]^t[h>>>16&255]^n[y>>>8&255]^c[255&f]^i[a++],k=o[h>>>24]^t[y>>>16&255]^n[f>>>8&255]^c[255&u]^i[a++],l=o[y>>>24]^t[f>>>16&255]^n[u>>>8&255]^c[255&h]^i[a++];f=v,u=_,h=k,y=l}v=(s[f>>>24]<<24|s[u>>>16&255]<<16|s[h>>>8&255]<<8|s[255&y])^i[a++],_=(s[u>>>24]<<24|s[h>>>16&255]<<16|s[y>>>8&255]<<8|s[255&f])^i[a++],k=(s[h>>>24]<<24|s[y>>>16&255]<<16|s[f>>>8&255]<<8|s[255&u])^i[a++],l=(s[y>>>24]<<24|s[f>>>16&255]<<16|s[u>>>8&255]<<8|s[255&h])^i[a++];e[r]=v,e[r+1]=_,e[r+2]=k,e[r+3]=l},keySize:8});r.AES=i._createHelper(v)}(),e.AES});\n!function(e,t,r){\"object\"==typeof exports?module.exports=exports=t(require(\"./core\"),require(\"./enc-base64\"),require(\"./md5\"),require(\"./evpkdf\"),require(\"./cipher-core\")):\"function\"==typeof define&&define.amd?define([\"./core\",\"./enc-base64\",\"./md5\",\"./evpkdf\",\"./cipher-core\"],t):t(e.CryptoJS)}(this,function(e){return function(){var t=e,r=t.lib,c=r.WordArray,i=r.BlockCipher,l=t.algo,o=[57,49,41,33,25,17,9,1,58,50,42,34,26,18,10,2,59,51,43,35,27,19,11,3,60,52,44,36,63,55,47,39,31,23,15,7,62,54,46,38,30,22,14,6,61,53,45,37,29,21,13,5,28,20,12,4],s=[14,17,11,24,1,5,3,28,15,6,21,10,23,19,12,4,26,8,16,7,27,20,13,2,41,52,31,37,47,55,30,40,51,45,33,48,44,49,39,56,34,53,46,42,50,36,29,32],h=[1,2,4,6,8,10,12,14,15,17,19,21,23,25,27,28],n=[{0:8421888,268435456:32768,536870912:8421378,805306368:2,1073741824:512,1342177280:8421890,1610612736:8389122,1879048192:8388608,2147483648:514,2415919104:8389120,2684354560:33280,2952790016:8421376,3221225472:32770,3489660928:8388610,3758096384:0,4026531840:33282,134217728:0,402653184:8421890,671088640:33282,939524096:32768,1207959552:8421888,1476395008:512,1744830464:8421378,2013265920:2,2281701376:8389120,2550136832:33280,2818572288:8421376,3087007744:8389122,3355443200:8388610,3623878656:32770,3892314112:514,4160749568:8388608,1:32768,268435457:2,536870913:8421888,805306369:8388608,1073741825:8421378,1342177281:33280,1610612737:512,1879048193:8389122,2147483649:8421890,2415919105:8421376,2684354561:8388610,2952790017:33282,3221225473:514,3489660929:8389120,3758096385:32770,4026531841:0,134217729:8421890,402653185:8421376,671088641:8388608,939524097:512,1207959553:32768,1476395009:8388610,1744830465:2,2013265921:33282,2281701377:32770,2550136833:8389122,2818572289:514,3087007745:8421888,3355443201:8389120,3623878657:0,3892314113:33280,4160749569:8421378},{0:1074282512,16777216:16384,33554432:524288,50331648:1074266128,67108864:1073741840,83886080:1074282496,100663296:1073758208,117440512:16,134217728:540672,150994944:1073758224,167772160:1073741824,184549376:540688,201326592:524304,218103808:0,234881024:16400,251658240:1074266112,8388608:1073758208,25165824:540688,41943040:16,58720256:1073758224,75497472:1074282512,92274688:1073741824,109051904:524288,125829120:1074266128,142606336:524304,159383552:0,176160768:16384,192937984:1074266112,209715200:1073741840,226492416:540672,243269632:1074282496,260046848:16400,268435456:0,285212672:1074266128,301989888:1073758224,318767104:1074282496,335544320:1074266112,352321536:16,369098752:540688,385875968:16384,402653184:16400,419430400:524288,436207616:524304,452984832:1073741840,469762048:540672,486539264:1073758208,503316480:1073741824,520093696:1074282512,276824064:540688,293601280:524288,310378496:1074266112,327155712:16384,343932928:1073758208,360710144:1074282512,377487360:16,394264576:1073741824,411041792:1074282496,427819008:1073741840,444596224:1073758224,461373440:524304,478150656:0,494927872:16400,511705088:1074266128,528482304:540672},{0:260,1048576:0,2097152:67109120,3145728:65796,4194304:65540,5242880:67108868,6291456:67174660,7340032:67174400,8388608:67108864,9437184:67174656,10485760:65792,11534336:67174404,12582912:67109124,13631488:65536,14680064:4,15728640:256,524288:67174656,1572864:67174404,2621440:0,3670016:67109120,4718592:67108868,5767168:65536,6815744:65540,7864320:260,8912896:4,9961472:256,11010048:67174400,12058624:65796,13107200:65792,14155776:67109124,15204352:67174660,16252928:67108864,16777216:67174656,17825792:65540,18874368:65536,19922944:67109120,20971520:256,22020096:67174660,23068672:67108868,24117248:0,25165824:67109124,26214400:67108864,27262976:4,28311552:65792,29360128:67174400,30408704:260,31457280:65796,32505856:67174404,17301504:67108864,18350080:260,19398656:67174656,20447232:0,21495808:65540,22544384:67109120,23592960:256,24641536:67174404,25690112:65536,26738688:67174660,27787264:65796,28835840:67108868,29884416:67109124,30932992:67174400,31981568:4,33030144:65792},{0:2151682048,65536:2147487808,131072:4198464,196608:2151677952,262144:0,327680:4198400,393216:2147483712,458752:4194368,524288:2147483648,589824:4194304,655360:64,720896:2147487744,786432:2151678016,851968:4160,917504:4096,983040:2151682112,32768:2147487808,98304:64,163840:2151678016,229376:2147487744,294912:4198400,360448:2151682112,425984:0,491520:2151677952,557056:4096,622592:2151682048,688128:4194304,753664:4160,819200:2147483648,884736:4194368,950272:4198464,1015808:2147483712,1048576:4194368,1114112:4198400,1179648:2147483712,1245184:0,1310720:4160,1376256:2151678016,1441792:2151682048,1507328:2147487808,1572864:2151682112,1638400:2147483648,1703936:2151677952,1769472:4198464,1835008:2147487744,1900544:4194304,1966080:64,2031616:4096,1081344:2151677952,1146880:2151682112,1212416:0,1277952:4198400,1343488:4194368,1409024:2147483648,1474560:2147487808,1540096:64,1605632:2147483712,1671168:4096,1736704:2147487744,1802240:2151678016,1867776:4160,1933312:2151682048,1998848:4194304,2064384:4198464},{0:128,4096:17039360,8192:262144,12288:536870912,16384:537133184,20480:16777344,24576:553648256,28672:262272,32768:16777216,36864:537133056,40960:536871040,45056:553910400,49152:553910272,53248:0,57344:17039488,61440:553648128,2048:17039488,6144:553648256,10240:128,14336:17039360,18432:262144,22528:537133184,26624:553910272,30720:536870912,34816:537133056,38912:0,43008:553910400,47104:16777344,51200:536871040,55296:553648128,59392:16777216,63488:262272,65536:262144,69632:128,73728:536870912,77824:553648256,81920:16777344,86016:553910272,90112:537133184,94208:16777216,98304:553910400,102400:553648128,106496:17039360,110592:537133056,114688:262272,118784:536871040,122880:0,126976:17039488,67584:553648256,71680:16777216,75776:17039360,79872:537133184,83968:536870912,88064:17039488,92160:128,96256:553910272,100352:262272,104448:553910400,108544:0,112640:553648128,116736:16777344,120832:262144,124928:537133056,129024:536871040},{0:268435464,256:8192,512:270532608,768:270540808,1024:268443648,1280:2097152,1536:2097160,1792:268435456,2048:0,2304:268443656,2560:2105344,2816:8,3072:270532616,3328:2105352,3584:8200,3840:270540800,128:270532608,384:270540808,640:8,896:2097152,1152:2105352,1408:268435464,1664:268443648,1920:8200,2176:2097160,2432:8192,2688:268443656,2944:270532616,3200:0,3456:270540800,3712:2105344,3968:268435456,4096:268443648,4352:270532616,4608:270540808,4864:8200,5120:2097152,5376:268435456,5632:268435464,5888:2105344,6144:2105352,6400:0,6656:8,6912:270532608,7168:8192,7424:268443656,7680:270540800,7936:2097160,4224:8,4480:2105344,4736:2097152,4992:268435464,5248:268443648,5504:8200,5760:270540808,6016:270532608,6272:270540800,6528:270532616,6784:8192,7040:2105352,7296:2097160,7552:0,7808:268435456,8064:268443656},{0:1048576,16:33555457,32:1024,48:1049601,64:34604033,80:0,96:1,112:34603009,128:33555456,144:1048577,160:33554433,176:34604032,192:34603008,208:1025,224:1049600,240:33554432,8:34603009,24:0,40:33555457,56:34604032,72:1048576,88:33554433,104:33554432,120:1025,136:1049601,152:33555456,168:34603008,184:1048577,200:1024,216:34604033,232:1,248:1049600,256:33554432,272:1048576,288:33555457,304:34603009,320:1048577,336:33555456,352:34604032,368:1049601,384:1025,400:34604033,416:1049600,432:1,448:0,464:34603008,480:33554433,496:1024,264:1049600,280:33555457,296:34603009,312:1,328:33554432,344:1048576,360:1025,376:34604032,392:33554433,408:34603008,424:0,440:34604033,456:1049601,472:1024,488:33555456,504:1048577},{0:134219808,1:131072,2:134217728,3:32,4:131104,5:134350880,6:134350848,7:2048,8:134348800,9:134219776,10:133120,11:134348832,12:2080,13:0,14:134217760,15:133152,2147483648:2048,2147483649:134350880,2147483650:134219808,2147483651:134217728,2147483652:134348800,2147483653:133120,2147483654:133152,2147483655:32,2147483656:134217760,2147483657:2080,2147483658:131104,2147483659:134350848,2147483660:0,2147483661:134348832,2147483662:134219776,2147483663:131072,16:133152,17:134350848,18:32,19:2048,20:134219776,21:134217760,22:134348832,23:131072,24:0,25:131104,26:134348800,27:134219808,28:134350880,29:133120,30:2080,31:134217728,2147483664:131072,2147483665:2048,2147483666:134348832,2147483667:133152,2147483668:32,2147483669:134348800,2147483670:134217728,2147483671:134219808,2147483672:134350880,2147483673:134217760,2147483674:134219776,2147483675:0,2147483676:133120,2147483677:2080,2147483678:131104,2147483679:134350848}],k=[4160749569,528482304,33030144,2064384,129024,8064,504,2147483679],_=l.DES=i.extend({_doReset:function(){for(var e=this._key.words,t=[],r=0;r<56;r++){var c=o[r]-1;t[r]=e[c>>>5]>>>31-c%32&1}for(var i=this._subKeys=[],l=0;l<16;l++){var n=i[l]=[],k=h[l];for(r=0;r<24;r++)n[r/6|0]|=t[(s[r]-1+k)%28]<<31-r%6,n[4+(r/6|0)]|=t[28+(s[r+24]-1+k)%28]<<31-r%6;n[0]=n[0]<<1|n[0]>>>31;for(r=1;r<7;r++)n[r]=n[r]>>>4*(r-1)+3;n[7]=n[7]<<5|n[7]>>>27}var _=this._invSubKeys=[];for(r=0;r<16;r++)_[r]=i[15-r]},encryptBlock:function(e,t){this._doCryptBlock(e,t,this._subKeys)},decryptBlock:function(e,t){this._doCryptBlock(e,t,this._invSubKeys)},_doCryptBlock:function(e,t,r){this._lBlock=e[t],this._rBlock=e[t+1],a.call(this,4,252645135),a.call(this,16,65535),d.call(this,2,858993459),d.call(this,8,16711935),a.call(this,1,1431655765);for(var c=0;c<16;c++){for(var i=r[c],l=this._lBlock,o=this._rBlock,s=0,h=0;h<8;h++)s|=n[h][((o^i[h])&k[h])>>>0];this._lBlock=o,this._rBlock=l^s}var _=this._lBlock;this._lBlock=this._rBlock,this._rBlock=_,a.call(this,1,1431655765),d.call(this,8,16711935),d.call(this,2,858993459),a.call(this,16,65535),a.call(this,4,252645135),e[t]=this._lBlock,e[t+1]=this._rBlock},keySize:2,ivSize:2,blockSize:2});function a(e,t){var r=(this._lBlock>>>e^this._rBlock)&t;this._rBlock^=r,this._lBlock^=r<<e}function d(e,t){var r=(this._rBlock>>>e^this._lBlock)&t;this._lBlock^=r,this._rBlock^=r<<e}t.DES=i._createHelper(_);var B=l.TripleDES=i.extend({_doReset:function(){var e=this._key.words;if(2!==e.length&&4!==e.length&&e.length<6)throw new Error(\"Invalid key length - 3DES requires the key length to be 64, 128, 192 or >192.\");var t=e.slice(0,2),r=e.length<4?e.slice(0,2):e.slice(2,4),i=e.length<6?e.slice(0,2):e.slice(4,6);this._des1=_.createEncryptor(c.create(t)),this._des2=_.createEncryptor(c.create(r)),this._des3=_.createEncryptor(c.create(i))},encryptBlock:function(e,t){this._des1.encryptBlock(e,t),this._des2.decryptBlock(e,t),this._des3.encryptBlock(e,t)},decryptBlock:function(e,t){this._des3.decryptBlock(e,t),this._des2.encryptBlock(e,t),this._des1.decryptBlock(e,t)},keySize:6,ivSize:2,blockSize:2});t.TripleDES=i._createHelper(B)}(),e.TripleDES});\n!function(e,o){\"object\"==typeof exports?module.exports=exports=o(require(\"./core\")):\"function\"==typeof define&&define.amd?define([\"./core\"],o):o(e.CryptoJS)}(this,function(e){return e.enc.Utf8});\n\n/*******************thomas **********************/\nmsg0={}; // cnt=0 customer1\nmsg1={}; // cnt=0 customer2\nmsg2={}; //cnt=2 Http\nmsg2.method=\"GET\";\ncnt1={}; // cnt=1 aviosys 76 seriers\ncnt3={}; // cnt=1 aviosys 92 seriers\ncnt3.sever='myipedit.com';\ncnt1={\"port\":\"12593\",\"ip\":\"114.34.61.175\"};\nfil=\"cnt.iot.ippower.www.aviosys.com.newtaipei.taiwan.\".repeat(8);\nappname='node-red IPC';\nplatform='pc monitor';\nclientmac='900A799F48DC';\nfip=\"192.168.1.1\";\nmn=String.fromCharCode(0);\nd1=new Date();\nvar cmd=\"\",cmdL=\"\";\nSWcmd = msg.payload.SWcmd;\nflow.set(\"SWcmd\",SWcmd);\nfunction isCNT1(gmac)\n{\nCNTtype=0; \nif( gmac.includes(\"009258\") || gmac.includes(\"009256\") || gmac.includes(\"009255\") || gmac.includes(\"009250\") ||  gmac.includes(\"009858\") ||  gmac.includes(\"009290\")||  gmac.includes(\"009820\"))\n{\nCNTtype=1; shead=\"s0\";cnt1.port=\"12593\";\n}\ncnt1.CNTtype=CNTtype;\nreturn CNTtype;\n}\n\nif(SWcmd.includes(\"R\")) {\nMACs = SWcmd.split(\"R\");\nMAC=MACs[0];\np6n=(MACs[1]).split(\"S\");\ncmd=\"cmd=setpower+p6\"+p6n[0]+\"=\"+p6n[1];\ncmdL=(isCNT1(SWcmd))? (\"p6\"+p6n[0]+\"=\"+p6n[1]) :(\"/goform/setpower?p6\"+p6n[0]+\"=\"+p6n[1]);\n} else { MAC= (SWcmd.split(\"Sinfo\"))[0];  } // mac add or \"all\"\n\nif(flow.get(\"ipcinfo\")===undefined) {return;}\nipcinfo=JSON.parse(flow.get(\"ipcinfo\"));\nvar maci;\n\nfor (var groups in ipcinfo) {   \npdevice=ipcinfo[groups];\nfor(maci in pdevice){\ndevinfo={\"mac\":maci,\"cmap\": MAC};\nif ((maci == MAC) || (MAC==\"all\")) {   \ndevinfo=ipcinfo[groups][maci];\ndevip=devinfo.devip;\ndevport=devinfo.devport;\nif(devport==\"0080\"){devport=\"80\";}\ndevcnt=devinfo.cnt;\naccount=devinfo.devaccount || \"admin\";\npassword=devinfo.devpasswd || \"12345678\";\nid=\"thomas\";\n\nmsg2.method=\"GET\";\nmsg2.devinfo=devinfo;\nif(MAC==\"all\") {msg2.MAC=maci; msg0.MAC=maci; msg1.MAC=maci;} \nelse { msg2.MAC=MAC; msg0.MAC=MAC; msg1.MAC=MAC}\nmsg2.ipcinfo=ipcinfo;\nmsg2.group=groups;\nmsg2.statusCode=msg.statusCode;\ncnt1.devinfo=devinfo;\n\nstamp=Math.round(d1.getTime()/1000);\ndevname=ipcinfo[groups][maci].devname;  \n\nstamp=Math.round(d1.getTime()/1000);\nif(SWcmd.includes(\"Sinfo\")) { \nif(devinfo.cnt==\"0\") { \nmsg0.payload=\"user=\"+account+\"+pass=\"+password+\"+appid=\"+id+\"+cmd=getinfo+tag=ippower+timestamp=\"+stamp;\nmsg0.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";\nnode.send([ msg0,{},{},null,null ]);\n}\nif(devinfo.cnt==\"3\") { \nmsg1.payload=\"user=\"+account+\"+pass=\"+password+\"+appid=\"+id+\"+cmd=getinfo+tag=ippower+timestamp=\"+stamp;\nmsg1.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";                    \nnode.send([ {},msg1,{},null,null ]);\n}        \nif(devinfo.cnt==\"1\"){ \nif(isCNT1(maci)) { // cnt1\nflow.set(\"SWcmd\",SWcmd);\nif(flow.get(\"ipcstatus\")===undefined) { ipcstatus={};}\nelse { ipcstatus=JSON.parse(flow.get(\"ipcstatus\"));} \nif(ipcstatus[groups]===undefined) { ipcstatus[groups]={};}\nif(ipcstatus[groups][maci]===undefined) {ipcstatus[groups][maci]={state:'-'}; }\ncmdcnt=\"getinfo\";\ncnt1.payload=String.fromCharCode(0x05,0,0,0)+clientmac+ mn.repeat(16-clientmac.length)+ maci+ mn.repeat(4)+ \naccount+ mn.repeat(64-account.length)+ password+ mn.repeat(64-password.length)+cmdcnt+mn.repeat(340-cmdcnt.length); \nflow.set(\"cnt1x=\",cnt1.payload);\nnode.send([null,null,null,null,cnt1]);\n} else { // cnt3\ncnt3.password=password;    \ncnt3.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";\nipcmd=\"user=\"+account+\"+pass=\"+password+\"+appid=\"+id+\"+cmd=getinfo+tag=aviosys+timestamp=\"+stamp;\ncnt3.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";\ncnt3.payload=getpayload(ipcmd);\nnode.send([ {},{},cnt3,null,null]);\n}} // end of cnt=1\n\nif(devinfo.cnt==\"2\") {\nmsg2.url= (isCNT1(maci))?(\"http://\"+devip+\":\"+devport+\"/set.cmd?user=\"+account+\"+pass=\"+password+\"+cmd=getpower\"):\n(\"http://\"+account+\":\"+password+\"@\"+devip+\":\"+devport+\"/goform/getpower\");\nnode.send({},{},{},{},{})\nnode.send([{},{},{}, msg2 ,null]);\n}\n} else {   // setpower\nif(devinfo.cnt==\"0\") { \nmsg0.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";\nmsg0.payload=\"user=\"+account+\"+pass=\"+password+\"+appid=\"+id+\"+\"+cmd+\"+tag=\"+clientmac+\"+timestamp=\"+Math.round(d1.getTime()/1000);\nnode.send([ msg0,{},{},null,null ]);\n}\nif(devinfo.cnt==\"3\") { \nmsg1.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";\nmsg1.payload=\"user=\"+account+\"+pass=\"+password+\"+appid=\"+id+\"+\"+cmd+\"+tag=\"+clientmac+\"+timestamp=\"+Math.round(d1.getTime()/1000);                          \nnode.send([ {},msg1,{},null,null ]);\n}                  \nif(devinfo.cnt==\"1\"){\nif(isCNT1(maci)){ \nflow.set(\"SWcmd\",SWcmd);   \nif(flow.get(\"ipcstatus\")!==undefined) { ipcstatus=JSON.parse(flow.get(\"ipcstatus\"));}\nelse {ipcstatus={}; }\nif(ipcstatus[groups]===undefined) { ipcstatus[groups]={};}\nif(ipcstatus[groups][maci]===undefined) {ipcstatus[groups][maci]={state:'-'};}\nif(ipcstatus[groups][maci].power===undefined ) { ipcstatus[groups][maci].power=['0','0','0','0','0','0','0','0'];}\n\ncmdc=ipcstatus[groups][maci].power;\ncmdc[p6n[0]-1]=p6n[1];\nfor(i=0;i<4;i++){ if(cmdc[i]!=1) {cmdc[i]=0;}}\ncnt1.SWcmd=SWcmd;\ncnt1.cmdc=cmdc;\ncmdcnt=shead+ (cmdc[3]*8+cmdc[2]*4+cmdc[1]*2+cmdc[0]*1).toString(16);\ncnt1.payload=String.fromCharCode(0x05,0,0,0)+clientmac+ mn.repeat(16-clientmac.length)+maci+ mn.repeat(16-maci.length)+ \naccount+ mn.repeat(64-account.length)+ password+ mn.repeat(64-password.length)+cmdcnt+mn.repeat(340-cmdcnt.length);  \nflow.set(\"payload1\",cnt1.payload);\nnode.send([null,null,null,null,cnt1]);\n} else {\ncnt3.password=password;\ncnt3.topic= \"mac/\"+maci.toUpperCase()+\"/cmd\";\nipcmd=\"user=\"+account+\"+pass=\"+password+\"+appid=\"+id+\"+\"+cmd+\"+tag=\"+clientmac+\"+timestamp=\"+Math.round(d1.getTime()/1000);\ncnt3.payload=getpayload(ipcmd);\nnode.send([ {},{},cnt3,null,null]);\n}}\nif(devinfo.cnt==\"2\") {\nmsg2.url=(isCNT1(maci))?(\"http://\"+devip+\":\"+devport+\"/set.cmd?user=\"+account+\"+pass=\"+password+\"+cmd=setpower+\"+cmdL):\n(\"http://\"+account+\":\"+password+\"@\"+devip+\":\"+devport+cmdL);\nnode.send([{},{},{}, msg2 ,null]);\n}}}  \nif((maci==MAC) && (MAC!=='all')) break;\n}\nif((maci==MAC) && (MAC!=='all')) break;\n}\n  ",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 270,
+        "y": 520,
+        "wires": [
+            [
+                "ce2a4f75.66243"
+            ],
+            [
+                "20d5b1d3.f3d3fe"
+            ],
+            [
+                "21a3e8a5.376028"
+            ],
+            [
+                "19c54d65.1e1223"
+            ],
+            [
+                "4b2f15c.4c795ec"
+            ]
+        ]
+    },
+    {
+        "id": "ce2a4f75.66243",
+        "type": "mqtt out",
+        "z": "32aa2d05.3790a2",
+        "name": "publish ippower",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "774ad28f.52b8bc",
+        "x": 540,
+        "y": 380,
+        "wires": [],
+        "info": "phone_user\nNHY2007#zy_edc88"
+    },
+    {
+        "id": "72d16c2a.facb84",
+        "type": "mqtt in",
+        "z": "32aa2d05.3790a2",
+        "name": "ippower in",
+        "topic": "mac/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "774ad28f.52b8bc",
+        "x": 80,
+        "y": 380,
+        "wires": [
+            [
+                "7ab245f2.2cc5cc"
+            ]
+        ]
+    },
+    {
+        "id": "b5a8f612.f16d58",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "make html",
+        "func": "var fs = global.get('fs');\n\nif (typeof fs === 'undefined') {   msg.at=\"fs undefined\";   return  msg; }\nif(typeof fs !== 'object') { msg.at='fs global context is not an object'; return msg;}\n\nipcfn=\"IPC/ipc/ipcinfo.txt\";\niflow=\"IPC/projects/IPPowerCenter/flow.json\";\n\nif(flow.get(\"iflow\")=== undefined){ flow.set(\"iflow\",iflow);}\nif(flow.get(\"ipcfn\")=== undefined){ flow.set(\"ipcfn\",ipcfn);}\nipcfn=flow.get(\"ipcfn\");  \nflow.set(\"ipcstatus\",\"{}\");\niflowinfo = fs.readFileSync(iflow,'utf8');\niflowx=JSON.parse(iflowinfo);\n\nfor(i=0; i < iflowx.length; i++){\nif(iflowx[i].name === \"customize1\"){\n  msg.cus1 = iflowx[i].broker;\n  msg.cus11 = iflowx[i].port;  \n}\n\nif(iflowx[i].name === \"customize2\"){\n  msg.cus2 = iflowx[i].broker;\n  msg.cus22 = iflowx[i].port;\n}\n}\n\nfunction getRN(selmac){\n  devtypes= {\"009255\":1,\"009256\":1,\"009258\":4, \"009858\":4, \"007658\":4,\"007650\":4,\"007660\":8, \"007623\":4,\"007624\":4,\"007628\":2,\"007612\":2,\"007620\":8};\n    Rlnum=devtypes[selmac.substr(0,6)];\n   return Rlnum;\n}\n\nfs.access(ipcfn , (err) => {\nif (!err) {\nmsg.at=\"file found\";\nipcinfo = fs.readFileSync(ipcfn,'utf8');\nif(ipcinfo === undefined  || ipcinfo.length===0) {ipcinfo=flow.get(\"ipcinfo\");}\nif(ipcinfo === undefined) {ipcinfo=\"{}\";}\nflow.set(\"ipcinfo\",ipcinfo);\n  \nif(ipcinfo.includes(\"009258\") || ipcinfo.includes(\"009256\") || ipcinfo.includes(\"009255\") || ipcinfo.includes(\"009250\") ||  ipcinfo.includes(\"009858\") ||  ipcinfo.includes(\"009290\")||  ipcinfo.includes(\"009820\"))\n{ \n    context.set(\"CNTcount\",50);\n    runcnt();\n}\n  \nipcinfoj=JSON.parse(ipcinfo);\nipcdisplay={};\nmsg.ipcstatus=flow.get(\"ipcstatus\");\nipcstatus=JSON.parse(msg.ipcstatus);\nfor (var groups in ipcinfoj){   \nif(groups.length===0) { delete  ipcinfoj[groups]; continue;}\npdevice=ipcinfoj[groups];\nipcdisplay[groups]={};\nfor(var maci in pdevice){  \nif(maci.length===0) { delete  ipcinfoj[groups]; continue;}\nipcdisplay[groups][maci]={};\nipcdisplay[groups][maci].server=ipcinfoj[groups][maci].server;\nipcdisplay[groups][maci].devname=ipcinfoj[groups][maci].devname;\nipcdisplay[groups][maci].devip=ipcinfoj[groups][maci].devip;\nipcdisplay[groups][maci].devport=ipcinfoj[groups][maci].devport;\nipcdisplay[groups][maci].size=getRN(maci);\nipcdisplay[groups][maci].cnt=ipcinfoj[groups][maci].cnt;\nipcdisplay[groups][maci].power=[0,0,0,0,0,0,0,0];\nipcinfoj[groups][maci].pname=['Out1','Out2','Out3','Out4','Out5','Out6','Out7','Out8'];\n } \n}\n  \nmsg.ipcdisplay=JSON.stringify(ipcdisplay);\n \ndcs=\"<div class=\";\ntotdev='<div id=\"ipxx\">' ;\n\nfor ( groups in ipcinfoj){  \npdevice=ipcinfoj[groups];\nintanceDevice= dcs+'\"groupspace\">'+dcs+'\"groupn\">'+dcs+'\"\">'+ groups +'</div></div><div class=\"groupdev\">';\nfor(var mac in pdevice){\ndevname=pdevice[mac].devname;\ndevmacR=mac+\"R\"; \ndevmacN=mac+\"N\";\nserver=pdevice[mac].server;\ndevip=pdevice[mac].devip;\n\nRlNum=getRN(mac);\nsp='&nbsp;&nbsp;';nsp='';\nif(RlNum==1){ ippbwh='ipp1';}\nif(RlNum==2){ ippbwh='ipp2';}\nif(RlNum==4){ ippbwh='ipp4';}\nif(RlNum==8){ ippbwh='ipp8';}\n\nidx=groups+mac; \npinfo='<div id=\"i'+devmacN+'\">' + dcs+ '\"devoff\"  id=\"devstate'+idx+'\"> </div>'+nsp+\ndcs+ '\"devnamex\" id=\"devname'+mac+'\">'+ devname+'</div>'+\ndcs+'\"devmac\" id=\"devmac'+idx+'\">'+ mac+ '</div>'+\n'</div>';// end pinfo\n\noperates= dcs+'\"operate\"   id=\"devop'+mac+'\">';\nfor(rly=1;rly<=RlNum;rly++) { \noperates= operates+ dcs+'\"Relayoff\" id=\"'+devmacR+rly+'\" onclick=\"RelaySW('+\"'\"+devmacR+rly+\"'\"+')\"></div>'+sp;\n}\noperates=operates+'</div>';\nintanceDevice=intanceDevice+dcs+'\"ippbox '+ippbwh+' \" id=\"'+devmacR+'\" onclick=seldevice(\"'+devmacR+'\",\"'+groups+'\") > '+\npinfo+operates+'</div>';\n}\ntotdev= totdev+intanceDevice+'</div></div>';\n}     \nipctable=totdev+'</div> ';\nmsg.ipctable=ipctable; \n\nnode.send([msg,null]);\n\n} else {\n  msg.at=\"file not found\";\n}}); \nfunction runcnt(){\nCNTlogin();\nCNTcount= context.get(\"CNTcount\");\nCNTcount--;\ncontext.set(\"CNTcount\",CNTcount);\nif(CNTcount>0){ \n  setTimeout(function(){runcnt();},19500);\n}\n }\n\nfunction CNTlogin(){\ncnt1={};\ncnt1.ip=\"114.34.61.175\";\ncnt1.port=12593;\nfil=\"cnt.iot.ippower.www.aviosys.com.newtaipei.taiwan.\".repeat(8);\nappname='node-red IPC';\nplatform='pc monitor';\nclientmac='900A799F48DC';\nfip=\"192.168.1.1\";\nmn=String.fromCharCode(0);      \ncnt1.payload=String.fromCharCode(0x01,0,0,0)+platform+mn.repeat(32-platform.length)+ \n             appname+mn.repeat(32-appname.length)+ clientmac+mn.repeat(16-clientmac.length)+\n             fip+mn.repeat(20-fip.length)+String.fromCharCode(0xB4,0x2B)+mn.repeat(397);\nnode.send([null,cnt1]);\n\n}\n   ",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 270,
+        "y": 60,
+        "wires": [
+            [
+                "c0ddc4d5.07a858"
+            ],
+            [
+                "eb9a3278.e11d2"
+            ]
+        ]
+    },
+    {
+        "id": "f34e4868.7c1538",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "load status",
+        "func": "msg.payload= flow.get(\"ipcstatus\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 550,
+        "y": 660,
+        "wires": [
+            [
+                "93df880e.c78b48"
+            ]
+        ]
+    },
+    {
+        "id": "19c54d65.1e1223",
+        "type": "http request",
+        "z": "32aa2d05.3790a2",
+        "name": "send http  ",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 560,
+        "y": 554,
+        "wires": [
+            [
+                "8d373a5d.290b18"
+            ]
+        ]
+    },
+    {
+        "id": "8d373a5d.290b18",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "parse HTTP  ",
+        "func": "\nif( typeof flow.get(\"ipcinfo\")===\"undefined\"){flow.set(\"ipcinfo\",\"{}\");}\nelse{ipcinfo1=flow.get(\"ipcinfo\");ipcinfo=JSON.parse(ipcinfo1);}\n\nif(Object.keys(flow.get(\"ipcstatus\"))<1) {flow.set(\"ipcstatus\",\"{}\");}\nipcstatus1=flow.get(\"ipcstatus\");\nipcstatus=JSON.parse(ipcstatus1);\nMAC=msg.MAC;\ntopic=msg.topic;\ngroup=msg.group;\ndevstate=msg.payload;\nmsg.code= msg.statusCode;\ngetstatus={\"state\":\"off\",\"power\":[\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\",\"x\"],\"temperature\":\"-\",\"volt\":\"-\",\"ver\":\"-\",\"digest\":\"-\",\n\"pname\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"ckt\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"cmdack\":\"-\",\"mac\":MAC,\"group\":group};\n \nif(devstate.includes(\"Unauthorized\") || msg.statusCode==401){  getstatus.state=\"UnAuthorization\";}\nif(msg.statusCode==\"ETIMEDOUT\"){ getstatus.state=\"ETIMEDOUT\";}\nif(devstate.includes(\"p6\")) {\nsubdev=devstate.split(\"p\");\ngetstatus.state=\"on\";\n    for(i=0;i<subdev.length;i++){ \n    sub2dev=subdev[i].split(\"=\");\n        for(j=0;j<8;j++){\n        patV=\"6\"+(j+1)+\"=\";\n            if(subdev[i].includes(patV)){getstatus.power[j]=sub2dev[1].substring(0, 1) ;}\n            else {  msg.devstate=devstate+\"..no patV...\"+MAC;\n            if(Object.keys(ipcinfo[group])<1) { ipcstatus[group]={};}\n            if(Object.keys(ipcinfo[group][MAC])<1){ ipcstatus[group][MAC]=getstatus;}\n            }\n        }\n    }\n}\n\nif(devstate.includes(\"PowerStatus=\")) {  getstatus.state=\"on\";\ns1=devstate.split(\"PowerStatus=\");\nsubdev=s1[1].split(\";\");\nfor(j=0;j<8;j++){ getstatus.power[j]=subdev[j] ; }\n}\n\nif(ipcstatus[\"undefined\"]){delete ipcstatus[undefined];}\nif(group!=\"undefined\") {\nif( ipcstatus[group] === undefined || (Object.keys(ipcstatus[group])<1) ){ipcstatus[group]={}; ipcstatus[group][MAC]=getstatus;}\n}\nif(ipcstatus[group][MAC] === undefined  || (Object.keys(ipcstatus[group][MAC])<1)){ \nipcstatus[group][MAC]=getstatus;}\nfor(idx=1;idx<=8;idx++) {  \nif(getstatus.power[idx-1]==\"1\") {ipcstatus[group][MAC].power[idx-1]=\"1\";}\nif(getstatus.power[idx-1]==\"0\") {ipcstatus[group][MAC].power[idx-1]=\"0\";}\n}\nipcstatus1=JSON.stringify(ipcstatus);\nflow.set(\"ipcstatus\",ipcstatus1);\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 770,
+        "y": 555,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93df880e.c78b48",
+        "type": "http response",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/html"
+        },
+        "x": 730,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "765698d2.05f508",
+        "type": "http response",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/html"
+        },
+        "x": 688,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f4372023.884d2",
+        "type": "delay",
+        "z": "32aa2d05.3790a2",
+        "name": "wait response",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 320,
+        "y": 660,
+        "wires": [
+            [
+                "f34e4868.7c1538"
+            ]
+        ]
+    },
+    {
+        "id": "7ab245f2.2cc5cc",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Parse mqtt",
+        "func": "\nif( typeof flow.get(\"ipcinfo\") == \"undefined\") {flow.set(\"ipcinfo\",\"{}\");}\nelse {ipcinfo1=flow.get(\"ipcinfo\");}\nipcinfo=JSON.parse(ipcinfo1);\ndevstate=msg.payload;\ntopic=msg.topic;\n\nif(typeof flow.get(\"ipcstatus\") ==\"undefined\") {flow.set(\"ipcstatus\",\"{}\");}\nipcstatus1=flow.get(\"ipcstatus\");\nmsg.ipcstatus=ipcstatus1;\nipcstatus=JSON.parse(ipcstatus1);\nif(ipcstatus.undefined) {delete ipcstatus.undefined;}\ngetstatus={\"state\":\"-\",\"power\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"temperature\":\"-\",\"volt\":\"-\",\"ver\":\"-\",\"digest\":\"-\",\"pname\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"ckt\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"cmdack\":\"-\"};\nvar groups,group,maci,MAC; \n\nif(typeof topic ===\"undefined\") {msg.errs=\"wrong topics undefined\"; return msg;}\ntopics=topic.split(\"/\"); \nif(topics.length<3) {msg.errs=\"wrong topics\"+topic;return msg;}\nif(topics[0]!==\"mac\") {msg.errs=\"wrong topics \"+topic;return msg;}   \nif(topics[1]==\"all\") {msg.errs=\"wrong topics \"+topic;return msg;}\nMAC=topics[1]; \nif(topics[2]==\"cmd\") { msg.errs=\"topic cmd \"; return msg;}\n\nmsg.test=MAC+\"from-- \";\nfor (groups in ipcinfo){   \npdevice=ipcinfo[groups];\nfor(maci in pdevice){   \nmsg.test=msg.test+groups+maci;\nif(maci == MAC) {   \nmsg.test=msg.test+\"***\"+MAC+\"***\";\ngrop=groups;\nif(topics[2]==\"status\" || \"cmd_ack\") {\nmsg.errs=\"topic \"+topics[2]+\"-->\"+group+\"::\"+MAC;\nif(typeof ipcstatus[groups] ===\"undefined\") {ipcstatus[groups]={};}\nif(typeof ipcstatus[groups][maci] ===\"undefined\") {ipcstatus[groups][maci]=getstatus;}\nif(devstate.includes(\"status=offline,digest=\")) {ipcstatus[groups][maci].state=\"off\"; return msg;}\nif(devstate.includes(\"status=online,digest=\")) {ipcstatus[groups][maci].state=\"on\"; return msg;}\nif(devstate.includes(\"cmd=getinfo\") && devstate.includes(\",\")){     \nsubdev=devstate.split(\",\");\nmsg.errs=\"cmd=getinfo subdev=\"+ subdev;\nfor(i=0;i<subdev.length;i++){  \nsub2dev=subdev[i].split(\"=\");\nfor(j=0;j<8;j++){\npatV=\"p6\"+(j+1)+\"=\";\npatC=\"c6\"+(j+1)+\"=\";\nif(subdev[i].includes(patV)) {ipcstatus[groups][maci].power[j]=sub2dev[1];}\nif(subdev[i].includes(patC)) {ipcstatus[groups][maci].ckt[j]=sub2dev[1];}\n}\nif(sub2dev[0].includes(\"pn\")) { ipcstatus[groups][maci].pname=(sub2dev[1]).split(\";\");}\nif(sub2dev[0].includes(\"temperature\")) { ipcstatus[groups][maci].temp=sub2dev[1];}\nif(sub2dev[0].includes(\"voltage\")) { ipcstatus[groups][maci].volt=sub2dev[1];}\nif(sub2dev[0].includes(\"ver\")) { ipcstatus[groups][maci].ver=sub2dev[1];}\nif(sub2dev[0].includes(\"digest\")) { ipcstatus[groups][maci].digest=sub2dev[1];}\nif(sub2dev[0].includes(\"timestamp\")) { ipcstatus[groups][maci].temperature=sub2dev[1];}\nipcstatus[groups][maci].state=\"on\";\n} \n\nmsg.ipcstatus=JSON.stringify(ipcstatus);\nflow.set(\"ipcstatus\",msg.ipcstatus);\n}}\nbreak;\n}} \nif(maci == MAC) break;\n} \n",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 290,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5fbdf7a3.11ec58",
+        "type": "udp in",
+        "z": "32aa2d05.3790a2",
+        "name": "IP98xx  in",
+        "iface": "",
+        "port": "9999",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 100,
+        "y": 840,
+        "wires": [
+            [
+                "1df22e6e.5d4e32"
+            ]
+        ]
+    },
+    {
+        "id": "d28507ef.42c948",
+        "type": "udp out",
+        "z": "32aa2d05.3790a2",
+        "name": "search  out",
+        "addr": "",
+        "iface": "",
+        "port": "",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "broad",
+        "x": 570,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "32e9dd80.6fed52",
+        "type": "http response",
+        "z": "32aa2d05.3790a2",
+        "name": "HTML Display",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/html"
+        },
+        "x": 560,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "72cdf725.cfed18",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Search Result",
+        "func": "var msg2 = msg.payload\nmsg.id2=msg.id\ndevinfo2={};\nfor(i =0 ;i < msg2.length ;i++)\n{\nif(msg2[i].payload.includes(\"IPREPLY,0\"))  \n{\npay=msg2[i].payload;\nip=msg2[i].ip;\ninfos=pay.split(\",\");\nmac=infos[2].replace(/-/g,'');\nMAC=mac.toUpperCase();\nnetmask=infos[4];\ngateway=infos[5];\nipport=infos[3].split(\":\");\nport=ipport[1];\nname=infos[6];\ndhcp=infos[7];\nversion=infos[8];\ndevinfo2[MAC]={\"name\":name, \"devip\":ip,\"gateway\":gateway,\"netmask\":netmask,\"devport\":port,\"dhcp\":dhcp,\"ver\":version}\n}\n}  \nflow.set(\"devinfo2\",devinfo2);\n//msg.payload={};\nipcinfo=JSON.parse(flow.get(\"ipcinfo\"));\nfor(var groupx in ipcinfo)\n{\nfor(var maci in ipcinfo[groupx])\n{ \nif(Object.keys(devinfo2).includes(maci))\n{ \nipcinfo[groupx][maci].devip==devinfo2[maci].devip;\nipcinfo[groupx][maci].devport==devinfo2[maci].devport;\n}\n}\n}\nflow.set('ipcinfo',JSON.stringify(ipcinfo));\n\n//msg.len2=msg2.length;\n//msg.devinfo2=devinfo2;\n//return msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 503,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "980f57b0.beac68",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "GET Search",
+        "url": "ui/search",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 920,
+        "wires": [
+            [
+                "2d3cbd1.1f68342",
+                "16f2dea3.772111"
+            ]
+        ],
+        "icon": "font-awesome/fa-neuter"
+    },
+    {
+        "id": "2d3cbd1.1f68342",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Search network ",
+        "func": "flow.set(\"devinfo1\",{});\nflow.set(\"devinfo2\",{});\nmsg.port=\"10000\";\nmsg.ip=\"255.255.255.255\";\nmsg.payload=\"IPQUERY,0\";\nnode.send(msg);\nmn=String.fromCharCode(0);\n\nvar d1 = new Date();\nvar d2 = new Date();\nwhile(d1-d2<500)\n{\nd1 = new Date();\n}\nnode.send({'port':\"1234\"});\nmsg.payload=\"PCEdit\"+mn.repeat(138);\nmsg.payload=\"PCEdit\"+String.fromCharCode(2)+ mn.repeat(117)+\"PCEdit\"+String.fromCharCode(2)+mn.repeat(13);\nmsg.port=\"4000\";\nmsg.ip=\"255.255.255.255\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "d28507ef.42c948"
+            ]
+        ]
+    },
+    {
+        "id": "86bb2839.493738",
+        "type": "udp in",
+        "z": "32aa2d05.3790a2",
+        "name": "IP92xx  in",
+        "iface": "",
+        "port": "4000",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 100,
+        "y": 780,
+        "wires": [
+            [
+                "8a53c463.f9e388"
+            ]
+        ]
+    },
+    {
+        "id": "c10edc8b.0bec",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Search Result",
+        "func": "var msg1= msg.payload;\nvar devinfo1={};\nvar name=\"\";\nvar mac=\"\";\nvar payloadx=\"\";\npattern=\"IPCam\";\nmsg.id1=msg.id;\nfor(i =0 ;i < msg1.length ;i++) {\nastr=msg1[i].payload;\npayload1=astr.toString();\nfinds=payload1.indexOf(pattern);\n    if (finds===0) {\n        mac=\"\";\n        for(m=14;m<20;m++) {\n        macs= astr[m].toString(16);\n        if(macs.length==1){macs='0'+macs;}\n        mac=mac+macs;\n        }\n        MAC=mac.toUpperCase();\n        name=\"\";\n        len= ( payload1.substr(32,20)).indexOf('\\0');\n        name=(payload1).substr(32,len);\n        ip=msg1[i].ip;\n        payloadx=payloadx+\" (\"+i+\",\"+finds+\")\"+ payload1;\n        netmask=astr[20]+':'+astr[21]+':'+astr[22]+':'+astr[23];\n        gateway=astr[27]+':'+astr[28]+':'+astr[29]+':'+astr[30];\n        port=String.fromCharCode(astr[50])+String.fromCharCode(astr[51])+String.fromCharCode(astr[52])+String.fromCharCode(astr[53]);\n        version=String.fromCharCode(astr[54])+String.fromCharCode(astr[55])+String.fromCharCode(astr[56])+String.fromCharCode(astr[57])+String.fromCharCode(astr[58])+String.fromCharCode(astr[59]);\n        dhcp=String.fromCharCode(astr[60])+String.fromCharCode(astr[61])+String.fromCharCode(astr[62]);\n        devinfo1[MAC]={\"name\":name, \"devip\":ip,\"gateway\":gateway,\"netmask\":netmask,\"devport\":port,\"dhcp\":dhcp,\"ver\":version}// \n    }\n}  \nflow.set(\"devinfo1\",devinfo1);\n\n\n",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "16f2dea3.772111",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "show Search",
+        "func": "CNT=\"2\";\nsetTimeout(function(){  rundisp();},2500);\n//if(msg.req===undefined) return;\n\nnum=0;\ndcs=\"<div class=\";\nvar localdevice=\"\"\nd1 = new Date();  \nipcinfo=JSON.parse(flow.get(\"ipcinfo\"));\n// devmac devname group cnt server sport saccount spasswd devaccount devpasswd \n\nfunction dispdev(devinfo){\n\nfor(var mac in devinfo){\nip= devinfo[mac].devip;\nport= devinfo[mac].devport;\nfound=\"\"; dift=\"NO\";\nfor(var groupx in ipcinfo){ \nfor(var maci in ipcinfo[groupx]){\nif(mac==maci){  \nfound=\"found\";\nif(ipcinfo[groupx][maci].devip!=devinfo[maci].devip) { dift=\"dift\";   ipcinfo[groupx][maci].devip=devinfo[maci].devip;   flow.set(\"ipcinfo\",(JSON.stringify(ipcinfo)));}\nif(ipcinfo[groupx][maci].devport!=devinfo[maci].devport) { dift=\"dift\"; ipcinfo[groupx][maci].devport=devinfo[maci].devport;   flow.set(\"ipcinfo\",(JSON.stringify(ipcinfo)));}\n}\n}\n}\ndevname=devinfo[mac].name;\ndevver = devinfo[mac].ver;\ndevmacX=mac+\"\"; \nlocaldevice=localdevice+dcs+'\"sbox '+found+'\" id=\"'+devmacX+'\" onclick=selloc(\"'+devmacX+'\") > '+\ndcs+ '\"devnamex\" id=\"devname'+devmacX+'\">'+ devname+'</div>'+\ndcs+'\"devmac\" id=\"devmac'+devmacX+'\">'+ mac+ '</div>'+\n'<div class=\"'+dift+'\" id=\"ip'+devmacX+'\">'+ip+'</div>'+\n'<div id=\"ver'+devmacX+'\">'+devver+'</div>'+\n'<div id=\"port'+devmacX+'\">'+port+'</div></div>';\nnum++; \n} }\nsellocs='function selloc(decX){document.getElementById(decX).style.backgroundColor=\"gray\"; document.getElementById(lastX).style.backgroundColor=\"gainsboro\"; lastX=decX;'+\n'  parent.document.getElementById(\"menutable\").style.display=\"inline-block\";'+\n'  parent.document.getElementById(\"devmac\").value  = decX;' +\n'  parent.document.getElementById(\"devname\").value = document.getElementById(\"devname\"+decX).innerHTML;' +\n'  parent.document.getElementById(\"group\").value   = \"Http\";'+\n'  parent.document.getElementById(\"devip\").value  = document.getElementById(\"ip\"+decX).innerHTML;' +\n'  parent.document.getElementById(\"cnt\").value=\"'+CNT+'\";'+\n'  parent.docnt();'+\n'  parent.document.getElementById(\"devaccount\").value=\"admin\";'+\n'  parent.document.getElementById(\"devpasswd\").value=\"12345678\";'+\n'  parent.document.getElementById(\"devport\").value   = document.getElementById(\"port\"+'+'decX).innerHTML;'+\n'  if(document.getElementById(\"ip\"+'+'decX).className==\"dift\"){ parent.document.getElementById(\"devip\").style.color=\"RED\";} else {'+\n' parent.document.getElementById(\"devip\").style.color=\"black\";}'+\n'  };  lastX=\"null\";</script>';\n\n\nlocaldevice='<html><style>html {font-size: 10px;} .sbox{ width:160px; height: 70px; background: gainsboro; border-radius:6px;display:inline-block; '+\n'border: 2px solid dimGrey; font-size:1.4rem;vertical-align: top;  padding: 0; text-align: center;'+\n'margin: 4px 4px 4px 4px;  overflow: hidden;  background-clip: content-box;} '+'.found{  background:burlywood;} .dift{ color:red;} '+\n'.devmac { background: azure; margin: 3px; }</style> <div id=\"null\"></div><script>'+sellocs;\n\nfunction rundisp() {\n\ndispdev(flow.get(\"devinfo1\"));\ndispdev(flow.get(\"devinfo2\"));\nmsg.payload=localdevice+'<script> parent.document.getElementById(\"totdev\").innerHTML= \"Search on'+ d1.toLocaleTimeString()+ 'total device='+num+'\"; </script>';  \nlastdev=localdevice+'<script> parent.document.getElementById(\"totdev\").innerHTML= \"Search on last time\"; </script>';  \nflow.set(\"localdevice\",lastdev);\nnode.send(msg);\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "32e9dd80.6fed52"
+            ]
+        ]
+    },
+    {
+        "id": "eb9a3278.e11d2",
+        "type": "udp out",
+        "z": "32aa2d05.3790a2",
+        "name": "CNT1 out",
+        "addr": "",
+        "iface": "",
+        "port": "",
+        "ipv": "udp4",
+        "outport": " 11183",
+        "base64": false,
+        "multicast": "false",
+        "x": 520,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "45a31372.515f2c",
+        "type": "udp in",
+        "z": "32aa2d05.3790a2",
+        "name": "CNT1 in",
+        "iface": "",
+        "port": "11183",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 80,
+        "y": 260,
+        "wires": [
+            [
+                "4d544fc7.8d1f3"
+            ]
+        ]
+    },
+    {
+        "id": "4d544fc7.8d1f3",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Parse cnt",
+        "func": "\nif( typeof flow.get(\"ipcinfo\") == \"undefined\") {flow.set(\"ipcinfo\",\"{}\");}\nelse{ipcinfo1=flow.get(\"ipcinfo\");}\nipcinfo=JSON.parse(ipcinfo1);\ndevstate=msg.payload.toString();\n\nif(typeof flow.get(\"ipcstatus\") ==\"undefined\") {flow.set(\"ipcstatus\",\"{'cntlogin':'no'}\");}\nipcstatus1=flow.get(\"ipcstatus\");\nmsg.ipcstatus=ipcstatus1;\nipcstatus=JSON.parse(ipcstatus1);\ngetstatus={\"state\":\"off\",\"power\":[\"c\",\"c\",\"c\",\"c\",\"c\",\"c\",\"c\",\"c\"],\"temperature\":\"-\",\"volt\":\"-\",\"ver\":\"-\",\"digest\":\"-\",\n\"pname\":[\"Out1\",\"Out2\",\"Out3\",\"Out4\",\"Out5\",\"Out6\",\"Out7\",\"Out8\"],\"ckt\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"],\"cmdack\":\"-\",\"mac\":\"-\",\"group\":\"-\"};\nvar groups,group,maci,MAC; \nvar clientmac='900A799F48DC';\nmsg.devstate=devstate;\n\nif(ipcstatus.undefined){delete ipcstatus.undefined;}\n\nif(devstate.includes(\"You Logout\")) { return msg; }\n\nif(devstate.includes(\"Not Found Device\")) { return msg;}  \n\nif(devstate.includes(\"Wrong Command\")){ ipcstatus[group][maci].state='off'; return msg;} \ncnt1={};\nfunction isCNT1(gmac){\nCNTtype=0; shead=\"s0\";cnt1.port=\"12593\";\nif( gmac.includes(\"009256\") || gmac.includes(\"009255\")){\nCNTtype=1; \nEPCrange=(parseInt(\"0092560013a8\", 16)<= parseInt(gmac,16)) && (parseInt(\"00925600143f\", 16)>=parseInt(gmac,16));\n\nif(EPCrange || (gmac==\"0092560010D1\") || (gmac==\"0092560010DE\") || (gmac==\"00925600006F\") || (gmac==\"0092550004CE\") || gmac==(\"009256002034\")){\nshead=\"s \"; cnt1.port=\"12594\"; CNTtype=2;\n}}\n\nif(gmac.includes(\"009258\") || gmac.includes(\"009250\") ||  gmac.includes(\"009858\") ||  gmac.includes(\"009290\")||  gmac.includes(\"009820\") ) { CNTtype=4;}\ncnt1.CNTtype=CNTtype;\nreturn CNTtype;\n}\n\nif(devstate.includes(\"Control OK\")){  // 9255 epc setpower response\nSWcmd=flow.get(\"SWcmd\");\nif(SWcmd.includes(\"R\")){   \nMACs = SWcmd.split(\"R\");\nMAC=MACs[0];\np6n=(MACs[1]).split(\"S\");   \nfor (groups in ipcinfo){  \npdevice=ipcinfo[groups];\nfor(maci in pdevice){    \nif(MAC==maci){  \nmsg.test=\"found!!\"\nif(typeof ipcstatus[groups] === \"undefined\") {ipcstatus[groups]={};}\nif(typeof ipcstatus[groups][maci] ===\"undefined\") {ipcstatus[groups][maci]=getstatus;}\nipcstatus[groups][maci].state=\"on\"; \nipcstatus[groups][maci].mac=maci;\nipcstatus[groups][maci].group=groups; \nipcstatus[groups][maci].power=[p6n[1],\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"];\nmsg.ipcstatus=JSON.stringify(ipcstatus);\nflow.set(\"ipcstatus\",msg.ipcstatus);\n}}}}} else {// 9258 getinfp response\nmsg.test=\"not find \"; grop=\"no\";\nfor (groups in ipcinfo) {   \npdevice=ipcinfo[groups];\nfor(maci in pdevice) {    \nmsg.check=clientmac;\nmsg.test=msg.test+\"--\"+msg.check; \nif(devstate.includes(msg.check) && devstate.includes(maci)) {  \nmsg.test=\"found!!\"\nif(typeof ipcstatus[groups] === \"undefined\") {ipcstatus[groups]={};}\nif(typeof ipcstatus[groups][maci] ===\"undefined\") {ipcstatus[groups][maci]=getstatus;}\nipcstatus[groups][maci].state=\"on\"; \nipcstatus[groups][maci].mac=maci;\nipcstatus[groups][maci].group=groups; \nif(typeof ipcstatus[groups] ===\"undefined\") {ipcstatus[groups]={};}\n\nif(isCNT1(maci)==2) {\nconts=((devstate.split(clientmac)[1]).split(\";\"))[1];\nif(conts.includes(\"1\")) {  ipcstatus[groups][maci].power=[\"1\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"];}\nelse {ipcstatus[groups][maci].power=[\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"];}\n} else { \nconts=((devstate.split(clientmac)[1]).split(\",\")[0]).split(\"\");\nipcstatus[groups][maci].power=[conts[11],conts[10],conts[9],conts[8],conts[7],conts[6],conts[5],conts[4]];\n}\nmsg.ipcstatus=JSON.stringify(ipcstatus);\nflow.set(\"ipcstatus\",msg.ipcstatus);\ngrop=groups;\nbreak;\n}}  \nif(grop==groups){ break;} \n}} \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e555e2e.25b882",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "GET delete",
+        "url": "ui/deleteall",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 1260,
+        "wires": [
+            [
+                "a663ac6a.8eb51"
+            ]
+        ]
+    },
+    {
+        "id": "8d2c37bc.ccf368",
+        "type": "http response",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "a663ac6a.8eb51",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "clear all memory",
+        "func": "var fs = global.get('fs');\niflow=\"IPC/ipc/ipcinfo.txt\";\n\nfs.access(iflow , (err) => {\n    if (!err) {\n        iflowinfo = fs.readFileSync(iflow,'utf8');\n        ppp=JSON.parse(iflowinfo);\n        \n        for(var groups in ppp) {  \n          delete ppp[groups] ;\n        }\n    \n        sss=JSON.stringify(ppp);\n    \n        fs.writeFile(iflow, sss,function (error) {\n        console.log(error)\n        console.log('write ok')\n        })\n        return;\n    }\n    return;\n});\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 314,
+        "y": 1260,
+        "wires": [
+            [
+                "8d2c37bc.ccf368"
+            ]
+        ]
+    },
+    {
+        "id": "1df22e6e.5d4e32",
+        "type": "join",
+        "z": "32aa2d05.3790a2",
+        "name": "UDP2 buffer get",
+        "mode": "custom",
+        "build": "array",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "2.2",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 310,
+        "y": 840,
+        "wires": [
+            [
+                "72cdf725.cfed18"
+            ]
+        ],
+        "inputLabels": [
+            "UDPIN2"
+        ],
+        "outputLabels": [
+            "UDPOUT2"
+        ]
+    },
+    {
+        "id": "8a53c463.f9e388",
+        "type": "join",
+        "z": "32aa2d05.3790a2",
+        "name": "UDP1 buffer get",
+        "mode": "custom",
+        "build": "array",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "0.8",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 300,
+        "y": 780,
+        "wires": [
+            [
+                "c10edc8b.0bec"
+            ]
+        ],
+        "inputLabels": [
+            "UDPIN1"
+        ],
+        "outputLabels": [
+            "UDPOUT1"
+        ]
+    },
+    {
+        "id": "77a21dc0.8fd654",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "CNT Search",
+        "url": "ui/cnt",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 1100,
+        "wires": [
+            [
+                "9e5212c7.a918f",
+                "d35f954f.1497a8"
+            ]
+        ],
+        "icon": "font-awesome/fa-neuter"
+    },
+    {
+        "id": "9e5212c7.a918f",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Parse cnt",
+        "func": "smac=msg.payload.smac;\nd1=new Date();\ntim=Math.round(d1.getTime()/1000);\n//msg.url=\"http://myipedit.com/test/ip_find.asp?name=\"+smac+'&stamp='+tim;\nmsg.url=\"http://myipedit.com/test/ip_find.asp?name=\"+smac+'&stamp='+tim;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 1100,
+        "wires": [
+            [
+                "ea7e4607.31fd68"
+            ]
+        ]
+    },
+    {
+        "id": "ea7e4607.31fd68",
+        "type": "http request",
+        "z": "32aa2d05.3790a2",
+        "name": "service response",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 470,
+        "y": 1100,
+        "wires": [
+            [
+                "2842eb6c.3eb7d4"
+            ]
+        ]
+    },
+    {
+        "id": "d35f954f.1497a8",
+        "type": "delay",
+        "z": "32aa2d05.3790a2",
+        "name": "wait response",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 300,
+        "y": 1171,
+        "wires": [
+            [
+                "8158d89d.dafbe8"
+            ]
+        ]
+    },
+    {
+        "id": "1ca9004b.f4f64",
+        "type": "http response",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/html"
+        },
+        "x": 670,
+        "y": 1171,
+        "wires": []
+    },
+    {
+        "id": "8158d89d.dafbe8",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "HTML display",
+        "func": "\nCNT=\"1\";\nsetTimeout(function(){  rundisp();},2000);\n//if(msg.req===undefined) return;\n\nnum=0;\ndcs=\"<div class=\";\nvar localdevice=\"\"\nd1 = new Date();  \nipcinfo=JSON.parse(flow.get(\"ipcinfo\"));\n// devmac devname group cnt server sport saccount spasswd devaccount devpasswd \nfunction dispdev(devinfo){\nfor(var mac in devinfo)\n{   ip= devinfo[mac].devip;\nport= devinfo[mac].devport;\nfound=\"\"; dift=\"NO\";\nfor(var groupx in ipcinfo)\n{ for(var maci in ipcinfo[groupx])\n{if(mac==maci)\n{  found=\"found\";\nif(ipcinfo[groupx][maci].devip!=devinfo[maci].devip) { dift=\"dift\";   ipcinfo[groupx][maci].devip=devinfo[maci].devip;   flow.set(\"ipcinfo\",(JSON.stringify(ipcinfo)));}\nif(ipcinfo[groupx][maci].devport!=devinfo[maci].devport) { dift=\"dift\"; ipcinfo[groupx][maci].devport=devinfo[maci].devport;   flow.set(\"ipcinfo\",(JSON.stringify(ipcinfo)));}\n}\n}\n}\ndevname=devinfo[mac].name;\ndevmacX=mac+\"\"; \nlocaldevice=localdevice+dcs+'\"sbox '+found+'\" id=\"'+devmacX+'\" onclick=selloc(\"'+devmacX+'\") > '+\ndcs+ '\"devnamex\" id=\"devname'+devmacX+'\">'+ devname+'</div>'+\ndcs+'\"devmac\" id=\"devmac'+devmacX+'\">'+ mac+ '</div>'+\n'<div class=\"'+dift+'\" id=\"ip'+devmacX+'\">'+ip+'</div> <div id=\"port'+devmacX+'\">'+port+'</div> </div>';\nnum++; \n} }\nsellocs='function selloc(decX){document.getElementById(decX).style.backgroundColor=\"gray\"; document.getElementById(lastX).style.backgroundColor=\"gainsboro\"; lastX=decX;'+\n'  parent.document.getElementById(\"menutable\").style.display=\"inline-block\";'+\n'  parent.document.getElementById(\"devmac\").value  = decX;' +\n'  parent.document.getElementById(\"devname\").value = document.getElementById(\"devname\"+decX).innerHTML;' +\n'  parent.document.getElementById(\"group\").value   = \"Http\";'+\n'  parent.document.getElementById(\"devip\").value  = document.getElementById(\"ip\"+decX).innerHTML;' +\n'  parent.document.getElementById(\"cnt\").value  =\"'+CNT+'\";'+\n'  parent.docnt();'+\n'  parent.document.getElementById(\"devaccount\").value=\"admin\";'+\n'  parent.document.getElementById(\"devpasswd\").value=\"12345678\";'+\n'  parent.document.getElementById(\"devport\").value   = document.getElementById(\"port\"+'+'decX).innerHTML;'+\n'  if(document.getElementById(\"ip\"+'+'decX).className==\"dift\"){ parent.document.getElementById(\"devip\").style.color=\"RED\"; } else {'+\n' parent.document.getElementById(\"devip\").style.color=\"black\";}'+\n'  };  lastX=\"null\";</script>';\n\n\nlocaldevice='<html><style>html {font-size: 10px;} .sbox{ width:160px; height: 53px; background: gainsboro; border-radius:6px;display:inline-block; '+\n'border: 2px solid dimGrey; font-size:1.4rem;vertical-align: top;  padding: 0; text-align: center;'+\n'margin: 4px 4px 4px 4px;  overflow: hidden;  background-clip: content-box;} '+'.found{  background:burlywood;} .dift{ color:red;} '+\n'.devmac { background: azure; margin: 3px; }</style> <div id=\"null\"></div><script>'+sellocs;\n\nfunction rundisp() {\ncntdev=flow.get(\"cntdevice\");\n\ndispdev( cntdev);\nmsg.payload=localdevice+'<script> parent.document.getElementById(\"totdev\").innerHTML= \"Search on'+ d1.toLocaleTimeString()+ 'total device='+num+'\"; </script>';  \nlastdev=localdevice+'<script> parent.document.getElementById(\"totdev\").innerHTML= \"Search on last time\"; </script>';  \nflow.set(\"localdevice\",lastdev);\nnode.send(msg);\n}\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 1171,
+        "wires": [
+            [
+                "1ca9004b.f4f64"
+            ]
+        ]
+    },
+    {
+        "id": "2842eb6c.3eb7d4",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "Search Result",
+        "func": "var devinfo = msg.payload;\nif(devinfo.split('|').length<8){  flow.set(\"cntdevice\",{}); return;} \ndev={};\ndevs= devinfo.split('#');\ncntdevice={};\nfor(i=1;i<devs.length-1;i++)\n{  \ndevcell= devs[i].split('|');\ndev.devip=devcell[4];\ndev.country=devcell[5];\ndev.city=devcell[6];\ndev.wip=devcell[7];\ncntdevice[devcell[2].toUpperCase()]=\n{ \"name\":devcell[1], \"server\":devcell[7],\"sport\":dev.sport,\"saccount\":dev.saccount,\"spasswd\":dev.spasswd,\n\"devaccount\":\"*\",\"devpasswd\":\"*\",\"wip\":devcell[4],\"devip\":\"*\",\n\"devport\":devcell[3],\"cnt\":\"1\",\n\"devdhcp\":\"*\",\"country\":devcell[5],\"city\":devcell[6],\n\"gateway\":\"*\",\"netmask\":\"*\",\"ver\":devcell[0] };\n}\n\nflow.set(\"cntdevice\",cntdevice);\nreturn \n",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "4b2f15c.4c795ec",
+        "type": "udp out",
+        "z": "32aa2d05.3790a2",
+        "name": "CNT1 out",
+        "addr": "",
+        "iface": "",
+        "port": "",
+        "ipv": "udp4",
+        "outport": " 11183",
+        "base64": false,
+        "multicast": "false",
+        "x": 563,
+        "y": 601,
+        "wires": []
+    },
+    {
+        "id": "999d2b6b.40b118",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "GET newstatus",
+        "url": "ui/newstatus",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 1320,
+        "wires": [
+            [
+                "41223267.085f7c"
+            ]
+        ]
+    },
+    {
+        "id": "eb9be0ed.7d4cf",
+        "type": "http response",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 692,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "41223267.085f7c",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "newstate",
+        "func": "ipcstatus=flow.get(\"ipcstatus\");\nmsg.payload=ipcstatus;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 1320,
+        "wires": [
+            [
+                "eb9be0ed.7d4cf"
+            ]
+        ]
+    },
+    {
+        "id": "c0ddc4d5.07a858",
+        "type": "ui_template",
+        "z": "32aa2d05.3790a2",
+        "group": "836421af.9fae4",
+        "name": "IPC_Display",
+        "order": 1,
+        "width": 30,
+        "height": 16,
+        "format": "<script type=\"text/javascript\" src=\"/jquery.min.js\"></script>\n<script type=\"text/javascript\" src=\"/blockui.js\"></script>\n<style>\nhtml {font-family: sans-serif, Verdana, Arial, Helvetica; font-size: 10px;}\nbody{ color: darkslategray;}\n/*************************** control  *********************************/\n.btndisp{ width: 100%; text-align: center;}\n.css_xp {\twidth:20%;\t}\t\n.on0 {\n\twidth: 90%;\n\theight: 110px; \n    max-width: 250px;\n    border-radius: 20px;\n    background-color: rgba(30,37,53,1);\n    border : 5px rgba(170,170,130,1) solid;\t\n    cursor:pointer;\n    margin:auto;  \n}\n.off0 {\n\twidth: 90%;\n\theight: 110px;\n   max-width: 450px;   \n \tborder-radius: 20px;\n   background-color: rgba(30,37,53,1);\n   border : 5px rgba(130,130,172,1) solid;\t\n   cursor:pointer;\n   margin: auto;\n}\n.non1{\n  border-color: transparent;\n  width: 45%;\n\theight: 50%;\n\tborder-width: 20%;\n}\n.non2{ \n  background-color: transparent;\n}\n\n.on1  { \n\twidth: 45%;\n\theight: 50%;\n\tborder-radius: 50%;\n   background-color:transparent;\n   margin-top: 5%;\n   margin-left : 10%;  \n   border:20px  rgba(188,228,92,1) solid; \n   border-top-color: transparent;  \n   border-top-width: 20%;\n   border-bottom-width: 20%;\n    color: #f0f0f0;\n\n\ttext-align:center; \n\tvertical-align: bottom; \n\tline-height: 180%;\n\ttransition:border 1s ease-in-out;\n\t-ms-transition:border 1s ease-in-out;  \n\t-o-transition:border 1s ease-in-out; \n\t-webkit-transition:border 1s ease-in-out; \n\tword-wrap: break-word;\n}\n.off1 {  \n  \twidth: 45%;\n\theight: 50%;\n\tborder-radius: 50%;\n   background-color:transparent;\n   margin-top: 5%;\n   margin-left : 10%;\n    border:20px rgb(96, 99, 93) solid; \n   border-bottom-color: transparent;  \n    border-top-width: 20%;\n   border-bottom-width:20%;\n    color: #f0f0f0;\n\n\ttext-align:center; \n\tvertical-align: bottom; \n\tline-height: 180%;\t\n\ttransition:border 1s ease-in-out;\n\t-ms-transition:border 1s ease-in-out;\n\t-o-transition:border 1s ease-in-out; \n\t-webkit-transition:border 1s ease-in-out; \n\tword-wrap: break-word;\n}\n\n.button-3d {\n  position:relative;\n  width: auto;\n  color:#0e0e0e;\n  text-decoration:none;\n  border-radius:5px;\n  border:solid 1px #F2E97E;\n  background:#E2D96E;\n  text-align:center;\n  padding:3px 15px 3px;\n  margin-bottom: 10px;\n\n  -webkit-transition: all 0.1s;\n  -moz-transition: all 0.1s;\n  transition: all 0.1s;\n\n  -webkit-box-shadow: 0px 6px 0px #D1C85D;\n  -moz-box-shadow: 0px 6px 0px #D1C85D;\n  box-shadow: 0px 6px 0px #D1C85D;\n}\n\n.button-3d:active{\n  -webkit-box-shadow: 0px 2px 0px #D1C85D;\n  -moz-box-shadow: 0px 2px 0px #D1C85D;\n  box-shadow: 0px 2px 0px #D1C85D;\n  position:relative;\n  top:4px;\n}\n\n[data-loader='circle-side']{\n\tposition: relative;\n\twidth: 35px;\n\theight: 35px;\n\t-webkit-animation: circle infinite .75s linear;\n\t-moz-animation: circle infinite .75s linear;\n\t-o-animation: circle infinite .75s linear;\n\tanimation: circle infinite .75s linear;\n\tborder: 2px solid #fff;\n\tborder-top-color: rgba(0, 0, 0, .2);\n\tborder-right-color: rgba(0, 0, 0, .2);\n\tborder-bottom-color: rgba(0, 0, 0, .2);\n\tborder-radius: 100%;\n\tmargin-left:45%;\n}\n\n@-webkit-keyframes circle\n{\n    0%\n    {\n        -webkit-transform: rotate(0);\n            -ms-transform: rotate(0);\n             -o-transform: rotate(0);\n                transform: rotate(0);\n    }\n    100%\n    {\n        -webkit-transform: rotate(360deg);\n            -ms-transform: rotate(360deg);\n             -o-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@-moz-keyframes circle\n{\n    0%\n    {\n        -webkit-transform: rotate(0);\n            -ms-transform: rotate(0);\n             -o-transform: rotate(0);\n                transform: rotate(0);\n    }\n    100%\n    {\n        -webkit-transform: rotate(360deg);\n            -ms-transform: rotate(360deg);\n             -o-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@-o-keyframes circle\n{\n    0%\n    {\n        -webkit-transform: rotate(0);\n            -ms-transform: rotate(0);\n             -o-transform: rotate(0);\n                transform: rotate(0);\n    }\n    100%\n    {\n        -webkit-transform: rotate(360deg);\n            -ms-transform: rotate(360deg);\n             -o-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@keyframes circle\n{\n    0%\n    {\n        -webkit-transform: rotate(0);\n            -ms-transform: rotate(0);\n             -o-transform: rotate(0);\n                transform: rotate(0);\n    }\n    100%\n    {\n        -webkit-transform: rotate(360deg);\n            -ms-transform: rotate(360deg);\n             -o-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n    \n}\n\n@keyframes myon{\n\tfrom {\n\t\tborder:20px rgba(188,228,92,0.1) solid;\n\t\tborder-top-color: transparent;  \n\t}\n\tto { \n\t\tborder : 20px  rgba(188,228,92,1) solid;\t\n\t\tborder-top-color: transparent;  \n\t}\n}\n\n@-webkit-keyframes myon {\n\tfrom {\n\t\tborder:20px rgba(188,228,92,0.6) solid;\n\t\tborder-top-color: transparent;  \n\t}\n\tto { \n\t\tborder : 20px  rgba(188,228,92,1) solid;\t\n\t\tborder-top-color: transparent;  \n\t}\n}\n@keyframes myoff{\n\tto { \n\t\tborder:20px rgba(148,188,92,1) solid; \n\t\tborder-bottom-color: transparent;  \n\t}\n}\n@-webkit-keyframes myoff {\n\tfrom {\n\t\tborder:20px rgba(148,188,92,0.6) solid; \n\t   border-bottom-color: transparent;    \n\t}\n\tto {\n\t\tborder:20px rgba(148,188,92,1) solid; \n\t  border-bottom-color: transparent;    \n\t  }\n}\n@-moz-keyframes myoff {\n\tfrom {\n\t\tborder:20px rgba(148,188,92,0.6) solid; \n\t   border-bottom-color: transparent;   \n\t   }\n\tto { \n\t\tborder:20px rgba(148,188,92,1) solid; \n\t  border-bottom-color: transparent;  \n\t  }\n}\n@-o-keyframes myoff {\n\tfrom {\n\t\tborder:20px rgba(148,188,92,0.6) solid; \n\t   border-bottom-color: transparent;    \n\t }\n\tto {\n\t\tborder:20px rgba(148,188,92,1) solid; \n\t  border-bottom-color: transparent;    \n\t  }\n}\n.on2 { \n\tmin-width: 10px;\n\tmax-height: 250px;\n\tmin-height: 20px;\n\twidth: 20%;\n\theight:80%;\n\tborder-radius: 50px;\n\tbackground-color: rgba(240,240,200,1);\n\tmargin-top: -25%;\n\tmargin-left : 40%;\n\tmargin-bottom  : 65%;\n\ttransition:margin-top  ,1s ;\n\t-o-transition:margin-top ,1s ;\n\t-ms-transition:margin-top ,1s ;  \n\t-webkit-transition:margin-top ,1s ; \n\t  transition:margin-bottom ,1s ;\n\t-o-transition:margin-bottom ,1s ;\n\t-ms-transition:margin-bottom ,1s ;\n\t-webkit-transition:margin-bottom ,1s ;\n}\n.off2 {   \n\tmin-width: 10px;\n\tmax-height: 250px;\n\tmin-height: 20px;\n\twidth: 20%;\n\theight:80%;\n\tborder-radius: 50px;\n\tbackground-color: rgba(200,200,200,1);\n\tmargin-top : 40%;\n\tmargin-left : 40%;\n\tmargin-bottom : 0%;\n\ttransition:\tmargin-top,1s;\n\t-o-transition:margin-top ,1s;\n\t-ms-transition:margin-top ,1s;  \n\t-webkit-transition:margin-top ,1s; \n\ttransition:margin-bottom ,1s ;\n\t-o-transition:margin-bottom ,1s;\n\t-ms-transition:margin-bottom ,1s;  \n\t-webkit-transition:margin-bottom ,1s;\n}\n.checkdev{\n      border-radius:30%;\n      height: 18px;\n      width: 32px;\n      border: 3px double dimgray;;\n      background-color:lightsteelblue;\n      margin-left: 100px;\n      display: inline-block;\n      padding: 1px;\n      font-size: 1rem;\n      vertical-align: bottom;\n}\n.boxref{ width:1px; height:1px; display:block;  position: absolute; }\n.menux1 {width:33%;}\n.menux2 {width:56%; left: 43%; }\n.anibox {\n  height: 200px;\n  width:1px;\n  z-index: 0;\n  position: relative;\n  top:300px;\n  left:200px;\n  background-color: #3a3a3a;\n  opacity: 0;\n}\n.anibox.diverse {\n  -webkit-transition: 2s;\n  -moz-transition: 2s;\n  -ms-transition: 2s;\n  -o-transition: 2s;\n  transition: 2s;\n  height: 0px;\n  width: 645px;\n  opacity: 1;\n  top:270px;\n  left:0px;\n  border-radius:50%;\n \n}\n\n.f16{ font-size: 1.6rem; }\n.f20{ font-size: 2.0rem; }\n.f40{ font-size: 2.0rem; }\n\n/* */\n.groupspace\n{\n  width: 100%;\n  background:lightgray;\n  margin: 10px 1% 10px 1%;\n  padding-left: 5px;\n  display:table;\n  border-radius:4px;\n  border: 2px solid dimGrey;\n}\n.groupdev{\n     display: inline-block;\n     width:89%;\n}\n.groupn /* group name*/\n    {\n      height:30px;\n      min-width:90px;\n      display: inline-block;\n      vertical-align:60%;\n      overflow: hidden; \n      color:darkslategray;\n      font-size:2rem;  \n   }\n.ippbox\n{\n  background: gainsboro;/*rgba(200,200,200,0.6);*/\n  display:inline-block;\n  border-radius:6px;\n  border: 2px solid dimGrey;\n  font-size:1.4rem;\n  vertical-align:baseline;\n  padding: 0px 0px 0px 0px;   /*Top,Right,Bottom,Left */\n  text-align: center;\n  margin: 0px 0px 0px 0px;\n  overflow: hidden; \n  background-clip: content-box;\n}\n.ipp8 {width: 200px; diaplay:inline-block;}\n.ipp4 {width: 100px; diaplay:inline-block;}\n.ipp2 {width: 100px; diaplay:inline-block;}\n.ipp1 {width: 90px; diaplay:inline-block;}\n.operate\n    { width:100%;  \n      height: auto;\n      text-align: center;\n     padding: 0px 2px 0px 2px;   /*Top,Right,Bottom,Left */\n     display:inline-block; \n    }\n.addmu {    \n\twidth:100%;  \n      height: auto;\n      background: gainsboro;/*rgba(200,200,200,0.6);*/\n      border-radius:1%;\n      border: 2px solid dimgrey;\n      font-size:1.4rem ;\n      vertical-align: top;\n      padding: 0px 0px 0px 0px;   /*Top,Right,Bottom,Left */\n      text-align: left;\n      margin: 0% 0% 0% 1%;\n      overflow: hidden; \n      background-clip: content-box;\n      /*display: none;*/\n}\n.addmu:before{    \n       display: inline-block;\n       content: 'Add new device\\270d';\n       position: relative;\n       top: 0px;\n       left: 0px; \n       text-align:center;\n       font-size: 1.5rem;\n}\n\n.devnamex\n    {  /* width: auto;*/\n        height: auto;\n        width: 6rem;\n        font-size: 0.5rem;\n       margin-right:0.5rem;\n     \n        display:inline-block;\n       overflow:hidden;\n         background: azure;\n    }\n.devmac {\n        width:auto;\n        height: auto;\n        font-size: 0.5rem;\n        display:block;\n        background: azure;\n        margin: 3px;\n        overflow:hidden;\n          /*  rgba(140,220,200,0.5);*/\n    }\n.server {\n        width:90px;\n        height: auto;\n        display:inline-block;\n        background: azure;\n        margin: 3px;\n        overflow:hidden;\n          /*  rgba(140,220,200,0.5);*/\n}\n    \n.pname{\n          width:4.6rem;\n        height: auto;\n        display:inline-block;\n        background: azure;\n             margin: 3px;\n        overflow:hidden;\n        \n}\n\n.devfind{\n  width:100%;\n  min-width:370px;\n  height:280px;\n  background: gainsboro;/*rgba(200,200,200,0.6);*/\n  border-radius:6px;\n  border: 2px solid dimGrey;\n  font-size:1.4rem ;\n  vertical-align: top;\n  padding: 0px 0px 0px 0px;   /*Top,Right,Bottom,Left */\n  text-align: center;\n  margin: 4px 0px 10px 4px;\n  background-clip: content-box;\n}\n.getsearch{\n  width: 100%;\n  height:260px;\n  margin:0,0,0,0;\n  padding: 0;\n}\n.devip{    \n    width: auto;\n        height: auto;\n        background:ivory;\n       margin: 3px;\n            /*rgba(220,140,190,0.5);*/\n}\n        \n.devoff{  \n \twidth:auto;\n       height: 1px;\n       display: inline-block;\n       position: relative;\n       top: 0px; \n       left: 0px;\n       color:darkblue;\n       vertical-align: text-bottom;\n}\n\n.devoff:before{  \n\twidth:25px;\n    height:25px;\n    content: '\\2716 ';\n    display:inline-block;\n    position: relative;\n    z-index: 0;\n    top:-20px;\n    color:midnightblue;  \n}\n\n.devlink{ \n       width:auto;\n       height: 1px;\n       display: inline-block;\n       position: relative;\n       top: 0px; \n       left: 0px;\n       color:darkblue;\n       vertical-align: text-bottom;\n      \n}\n\n.devlink:before{  \n\twidth:25px;\n    height:25px;\n    content: '\\1F310';\n    display:inline-block;\n    position: relative;\n    z-index: 0;\n    top:-20px;\n    color:midnightblue;\n}\n\n.devoff\n    {  width:auto;\n       height: 1px;\n       display: inline-block;\n       position: relative;\n       top: 0px; \n       left: 0px;\n       color:darkblue;\n       vertical-align: text-bottom;\n    }\n.devoff:before\n {  width:25px;\n    height:25px;\n    content: '\\2716 ';\n    display:inline-block;\n    position: relative;\n    z-index: 0;\n    top:-20px;\n    color:midnightblue;  \n     }\n.devlink\n    { \n       width:auto;\n       height: 1px;\n       display: inline-block;\n       position: relative;\n       top: 0px; \n       left: 0px;\n       color:darkblue;\n       vertical-align: text-bottom;\n      \n    }\n.devlink:before\n {  width:25px;\n    height:25px;\n    content: '\\1F310';\n    display:inline-block;\n    position: relative;\n    z-index: 0;\n    top:-20px;\n    color:midnightblue;\n     }\n\n.RelayoffX{ \n    \twidth:45px;\n      height:45px;\n      display:inline-block;\n      position: relative;\n      z-index: 0;\n      border-radius:23px;\n      margin-left: 0px;\n      margin-top: 4px;\n      font-size: 1rem;\n      background: -webkit-radial-gradient(center, circle farthest-side,  dimgrey 1%,  gray 65%, black 90%);\n}\n\n.RelayoffX:after{\n       display: block;\n       content: 'OFF';\n       position: relative;\n       top: 13px;\n       left: 4px; \n      color: white;\n}    \n    \n.RelayonX{  \n    \twidth:45px;\n       height:45px;\n       display:inline-block;\n       position: relative;\n       z-index: 0;\n       border-radius:23px;\n       margin-left: 4px;\n       margin-top: 4px;\n       font-size: 1rem;\n       background: -webkit-radial-gradient(center, circle farthest-side,  dimgrey 1%,  red 65%, black 90%);\n}\n\n.RelayonX:after{  \n\tdisplay: block;\n       content: 'ON';\n       position: relative;\n       top: 13px;\n       left: 2px; \n       color: white;\n}    \n \n.Relayon\n    {  width:12px;\n       display:inline-block;      \n    }\n\n.Relayon:after\n{ content: '\\1F534';   }  \n\n.Relayoff\n    {  width:12px;\n       display:inline-block;      \n    }\n\n.Relayoff:after\n    { content: '\\26ab';   }      \n.Relaylost{\n      width:45px;\n      display:inline-block;\n      color:rgba(160, 160, 160, .8);\n}\n\n.Relaylost:after{      \n       content: '\\26D4';      \n        font-size: 4rem;\n} \ninput.shiny{   \n\t/*min-width: 150px;*/\n  \t    padding-left:10px; padding-right:10px;\n  \t\tbackground: #c2c290;\n\t\tbackground: -webkit-linear-gradient(top, #b8b290, #ffffff, #b2b890);\n\t\tbackground: -o-linear-gradient(top, #b8b2b90,  #ffffff, #b2b890);\n\t\tbackground: linear-gradient(#b8b290,  #ffffff, #b2b890);\n\t\tborder:1px outset #888888;\n\t\tletter-spacing:0.15em;\t\n\t\toutline: none;\t\t\n\t\t-webkit-border-radius: 5px;\n\t\tborder-radius: 5px;\n\t\t-webkit-box-shadow: 0 2px 2px rgba(160, 160, 160, .8);\n\t\tbox-shadow: 0 2px 2px rgba(160, 160, 160, .8);\n  \t\ttext-align:center; \n \t\tcolor:#384858;\n\t\tcursor: pointer;\n\t   font-size: 1.7rem;   \t    \n}\ninput,select { \t\n\tfont-family: Verdana, Arial, Helvetica, sans-serif;\n        font-size: 1.6rem;   \n        min-width:10%;   \n}\ninput.shiny:hover, input#shiny:focus{ \n\t border:2px solid #909020;color:#c00000;\n\t   background-color: #cad0ea;\n}\t \n\ninput.shiny:active {box-shadow: 0 0 #909090;top: 3px;} \n\n.inl{\n    display:inline-block;\n    text-align:left;\n}\n/***************phone dimension ***********************************/    \n\n@media screen and (max-width: 1680px) {\n.menux1 {width:38%;}\n\t\n}\n@media screen and (max-width: 1440px) {\n.menux2 {left: 35%;}  \n}\n@media screen and (max-width: 1280px) {\n.menux2 {left: 31%;} \t\n}\n@media screen and (max-width: 1024px) {\t\n.menux2 {left: 24%;}   \n}    \n\n@media screen and (max-width: 480px) {\n\t\t \n.addmu {             \n      background: gainsboro;/*rgba(200,200,200,0.6);*/\n      border-radius:10px;\n      border: 2px solid dimgrey;\n      font-size:3rem;\n      vertical-align: top;\n      padding: 0px 0px 0px 0px;   /*Top,Right,Bottom,Left */\n      text-align: left;   \n      margin: 3% 3% 3% 3%;\n      overflow: hidden; \n      background-clip: content-box;     \n}\n.pname{          \n\tdisplay:none;   \n}\t\n/* group name*/\n.groupn { font-size:3rem; width:400px; }\n.ipc1 { width:100%;}\n  \n.ipc0{\n  width:500px;\n  display: inline;\n  background: DarkSlateGray;\n}\n.groupspace{\n  width: 95%; \n  height: auto;\n  background:DarkGray;\n  margin: 10px 1% 10px 1%;\n  padding-left: 5px;\n  display:table;\n  border-radius:4px;\n  border: 2px solid dimGrey;\n}\n.devnamex{font-size:2rem;}\n    \n.devmac {\n    background: azure;\n         margin-left: 0.3rem;\nfont-size:2rem; \n      /*  rgba(140,220,200,0.5);*/\n}\n\n\n.operate{ \n\twidth:100%;  \nheight: 80px;\ntext-align: center;\n}\n\n.Relayoff{     \nwidth: 75px;\nheight:75px;\ndisplay:inline-block;\nposition: relative;\nz-index: 0;\nborder-radius:40px;\nmargin-left: 2%;\n margin-top: 0.5rem;\n margin-bottom:0.5rem;\nfont-size: 3rem;\nbackground: -webkit-radial-gradient(center, circle farthest-side,  dimgrey 1%,  gray 65%, black 90%);\n}\n\n.Relayon{  \n\twidth:75px;\n height:75px;\n display:inline-block;\n position: relative;\n z-index: 0;\n border-radius:40px;\n margin-left: 2%;\n margin-top: 0.5rem;\n margin-bottom:0.5rem;\n font-size: 3rem;\n background: -webkit-radial-gradient(center, circle farthest-side,  dimgrey 1%,  red 65%, black 90%);\n}\n.Relaylost{\nwidth:45px;\ndisplay:inline-block;\ncolor:rgba(160, 160, 160, .8);\n}\n.Relaylost:after{      \n content: '\\26D4';      \n  font-size: 4rem;\n} \n.ippbox{\n\nheight: 185px;\nbackground: gainsboro;/*rgba(200,200,200,0.6);*/\nborder-radius:6px;\nborder: 2px solid dimGrey;\nfont-size:2rem ;\nvertical-align: top;\npadding: 0px 0px 0px 0px;   /*Top,Right,Bottom,Left */\ntext-align: center;\nmargin: 4px 4px 10px 10px;\noverflow: hidden; \nbackground-clip: content-box;\n}\n.ipp8 {width: 400px; height:22rem; diaplay:inline-block;}\n.ipp4 {width: 400px; height:15rem;  diaplay:inline-block;}\n.ipp2 {width: 180px; height:15rem;  diaplay:inline-block;}\n.ipp1 {width: 180px; height:15rem;  diaplay:inline-block;}\n \ninput.shiny{   \n\tmin-width: 150px;\n    padding-left:10px; padding-right:10px;\n\tbackground: #c2c290;\nbackground: -webkit-linear-gradient(top, #b8b290, #ffffff, #b2b890);\nbackground: -o-linear-gradient(top, #b8b2b90,  #ffffff, #b2b890);\nbackground: linear-gradient(#b8b290,  #ffffff, #b2b890);\nborder:1px outset #888888;\nletter-spacing:0.15em;\t\noutline: none;\t\t\n-webkit-border-radius: 5px;\nborder-radius: 5px;\n-webkit-box-shadow: 0 2px 2px rgba(160, 160, 160, .8);\nbox-shadow: 0 2px 2px rgba(160, 160, 160, .8);\n\ttext-align:center; \ncolor:#384858;\ncursor: pointer;\n font-size: 3rem;   \n  \n}\ninput,select { \t\n\tfont-family: Verdana, Arial, Helvetica, sans-serif;\n        font-size: 2.5rem;   \n        min-width:10%;   \n}\ninput.shiny:hover, input#shiny:focus{  \n\tborder:2px solid #909020;color:#c00000;\n\t   background-color: #cad0ea;\n}\t \n\ninput.shiny:active {box-shadow: 0 0 #909090;top: 3px;} \n}  \n</style>\n<script>\nipcdisplayT = {};\ntempis={};\nipcstatus = {};\np6_status = [\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"];\nselmacold = \"000\";\nselgroup = \"Group\";\nselmac = \"all\";\nflag1 = 0; toomany = 0; //setcmd=\"0\";    \n</script>\n<div id='ipcdisplayv' style='display:none' >{{msg.ipcdisplay}}</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.ipcdisplay', function(data) {\n       var y = document.getElementById('ipc1x');\n        y.innerHTML = data;\n        //ipcdisplayT = JSON.parse(data);\n        tempis = data;\n    });\n})(scope);\n</script>\n<div class=\"menux1\" style=\"position: fixed;z-index:1;margin-top:-45px;\">\n    <div>\n    <div class=\"boxref\"><div id=\"anibox\" class=\"anibox \"></div></div> \n<!--    menu  button area      -->\n    <input type=\"button\" value=\"&#9776;\" class=\"button-3d\" onclick=\"hideshow()\" />\n    <form class=\"inl\" action=\"search\" name=\"searchdev\" target=\"getsearch\" method=\"GET\"></form>\n    <input type=\"button\" id=\"searsubmit\" value=\"Local Search &#128270;\"  onclick=\"searchshow()\" name=\"search\" class=\"button-3d inl\" />  \n    <form class=\"inl\" action=\"cnt\" name=\"cntsearch\" target=\"getsearch\" method=\"GET\">\n    <div id=\"searchmac\"  style=\"display:none\"  class=\"inl f40\"><label for=\"smac\">&nbsp;by Device MAC/Name: &nbsp; </label>\n    <input type=\"text\" id=\"smac\"  name=\"smac\" size=\"13\" maxlength=\"12\" minlength=\"12\" /></div> \n    </form>\n     <input type=\"button\" id=\"cntsubmit\" value=\"Internet Search &#128270;\"  onclick=\"cntshow();\" name=\"search\" class=\"button-3d inl\" /> \n    </div>\n    \n<!--      Control button area      -->\n <div  id=\"admins\" > \n  <div id=\"btndisp\" class=\"btndisp\"> \n  <table width=\"49%\" class=\"inl\">\n  <tbody><tr>\n  <td class=\"css_xp\">\n    <div id=\"p61_btnf\" class=\"off0\" onclick=\"setp(1)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po1\"></div> <spin id=\"pn1\">power1</spin></div></div>\n  </td>\n  <td class=\"css_xp\">\n    <div id=\"p62_btnf\" class=\"off0\" onclick=\"setp(2)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po2\"></div> <spin id=\"pn2\">power2</spin></div></div>  \n  </td>\n  </tr>\n  </tbody></table>\n  <table width=\"49%\" class=\"inl\">\n  <tbody><tr>\n  <td class=\"css_xp\">\n  <div id=\"p63_btnf\" class=\"off0\" onclick=\"setp(3)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po3\"></div> <spin id=\"pn3\">power3</spin> </div></div>\n  </td>\n  <td class=\"css_xp\">\n  <div id=\"p64_btnf\" class=\"off0\" onclick=\"setp(4)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po4\"></div> <spin id=\"pn4\">power4</spin> </div></div>\n  </td>\n  </tr>\n  </tbody></table>\n  <table width=\"49%\" class=\"inl\">\n    <tbody><tr>\n    <td class=\"css_xp\">\n      <div id=\"p65_btnf\" class=\"off0\" onclick=\"setp(5)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po5\"></div> <spin id=\"pn5\">power5</spin></div></div>\n    </td>\n    <td class=\"css_xp\">\n      <div id=\"p66_btnf\" class=\"off0\" onclick=\"setp(6)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po6\"></div> <spin id=\"pn6\">power6</spin></div></div>  \n    </td>\n    </tr>\n    </tbody></table>\n    <table width=\"49%\" class=\"inl\">\n    <tbody><tr>\n    <td class=\"css_xp\">\n    <div id=\"p67_btnf\" class=\"off0\" onclick=\"setp(7)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po7\"></div> <spin id=\"pn7\">power7</spin> </div></div>\n    </td>\n    <td class=\"css_xp\">\n    <div id=\"p68_btnf\" class=\"off0\" onclick=\"setp(8)\"><div class=\"off1\"> <div class=\"off2\" id=\"Po8\"></div> <spin id=\"pn8\">power8</spin> </div></div>\n    </td>\n    </tr>\n    </tbody></table>\n  </div>\n  <!--     edit menu area     -->\n    <div >\n    <form action=\"update\" name=\"updatedev\" target=\"menuget\" method=\"GET\">\n    <input type=\"hidden\" name=\"adddel\" />\n    <input type=\"hidden\" name=\"devver\" id=\"devver\"/>\n    <table id=\"menutable\" class=\"addmu\"  border=\"1\" cellpadding=\"3\" cellspacing=\"2\" >\n    <tbody>\n    <tr>\n        <td width=\"600px\" colspan=\"2\"><input type=\"button\" id=\"devjump\" onclick=\"jump();\" style=\"\" value='&#128187;' />\n        <label for=\"devmac\">&nbsp;Device mac: &nbsp; &nbsp; </label>\n        <input type=\"text\" id=\"devmac\" name=\"devmac\" size=\"13\" maxlength=\"12\" minlength=\"12\" onkeypress=\"\"/>\n        \n        </td>  \n    </tr>\n    <tr>\n        <td width=\"40%\"><label>&nbsp;&#128106;Group:<input type=\"text\" id=\"group\" size=\"8\" maxlength=\"20\" name=\"group\"></label></td>\n        <td><label>&#128203;&#128268;Device name: <input type=\"text\" id=\"devname\" size=\"15\" maxlength=\"64\" name=\"devname\"></label></td>\n    </tr>\n    <tr>\n        <td id=\"cntserver\"><label for=\"cnt\"> Network:</label> \n        <select id=\"cnt\" name=\"cnt\" onchange=\"docnt()\">\n        <option value=\"2\">URL</option>\n        <optgroup label=\"Cloud Server\">\n        <option value=\"1\" selected=\"\">IPPower</option>\n        <option value=\"0\">customize1</option>\n        <option value=\"3\">customize2</option>\n        </select></td> \n        <td><div id=\"ipgroup\">&#128237;IP:<input type=\"text\" id=\"devip\" size=\"16\" maxlength=\"20\" name=\"devip\"> &nbsp;Port:\n        <input type=\"text\" id=\"devport\" size=\"3\" maxlength=\"4\" name=\"devport\"/> </div>\n        <div id=\"servergroup\">&#127760;Server:<input type=\"text\" id=\"server\" size=\"16\" maxlength=\"20\" name=\"server\"/> \n        <sp >&nbsp;Port: </sp>\n        <input type=\"text\" id=\"sport\" name=\"sport\" size=\"3\" maxlength=\"4\" /></div></td>\n    </tr>\n    <tr id=\"sap\">\n        <td><label for=\"saccount\">&nbsp;&#129333;Server Account:</label><br /><input type=\"text\" id=\"saccount\" name=\"saccount\" size=\"16\" maxlength=\"16\" /></td>\n        <td><label for=\"spasswd\">&nbsp;&#128273;Server Password:</label><br /><input type=\"password\" id=\"spasswd\" name=\"spasswd\"  value=\"\" size=\"16\" maxlength=\"16\" /></td>\n    </tr>\n    <tr id=\"sap1\">\n        <td><label for=\"devaccount\">&nbsp;&#129333;Devivc Account:</label><br /><input type=\"text\" id=\"devaccount\" name=\"devaccount\" size=\"16\" maxlength=\"16\" /></td>\n        <td><label>&nbsp;&#128273;Password:</label><br /><input type=\"password\" id=\"devpasswd\" name=\"devpasswd\" size=\"16\" value=\"\" maxlength=\"16\" /></td>\n    </tr> \n    <tr align=\"center\">\n        <td colspan=\"2\" style=\"\"><input type=\"button\" onclick=\"submitupdate('ADD')\" value=\"ADD&#128722;\" class=\"shiny\"  id=\"addsumbit\"/>&nbsp;&nbsp;&nbsp;&nbsp;  \n        <input type=\"button\"  onclick=\"submitupdate('DELETE')\"  value=\"DELETE&#128686;\"  class=\"shiny\" id=\"delsumbit\"/>&nbsp;&nbsp;&nbsp;&nbsp;\n        <input type=\"button\"  onclick=\"submitupdate('UPDATE')\"  value=\"UPDATE&#128260;\"  class=\"shiny\" id=\"upsumbit\"/>\n        <div id=\"checkdev\" class=\"checkdev\" style=\"display:none\" onclick=\"submitupdate('checkdev')\">Check</div></td>\n    </tr>\n    </tbody>\n    </table>\n    </form>\n    </div>  \n   <!--     search result area     -->\n    <div id=\"devfind\" class=\"devfind\" style=\"\"> \n    <div><div id=\"totdev\" class=\"inl\" ></div></div>\n    <iframe id='getsearch' srcdoc='' name='getsearch' class='getsearch' frameborder='0' scrolling='yes' ></iframe>\n    </div>\n</div>\n  <!--    end of menix1  area     -->\n </div>\n<!-- show IPC devic -->\n\n <!--      menix2  area     IPC table  -->\n<div id=\"xpcgroup\" class=\"menux2\" style=\"position: absolute;z-index:0;margin-top:-12px;\">\n<div id=\"ipc1x\" class=\"ipc1\">{{msg.ipctable}}</div>\n<script>\n(function(scope) {\n    scope.$watch('msg.ipctable', function(data) {\n        var z=document.getElementById(\"ipc1x\")\n        z.innerHTML = data;\n        //console.dir(data);\n    });\n})(scope);\n</script>\n\n<!-- iframe  swich button result -->\n<div style=\"display:none\">\n<form action=\"setcmd\" name=\"swrl\" target=\"farfar\" method=\"GET\" > <input type=\"hidden\" name=\"SWcmd\" /></form>    \n<iframe name=\"farfar\" id=\"farfar\" ></iframe>\n<iframe name=\"newstatus\" id=\"newstatus\" ></iframe>\n<iframe name=\"menuget\" id=\"menuget\" ></iframe>\n<form action=\"ipc\" name=\"getipc\" target=\"xxx\"  method=\"GET\"></form>\n<iframe name=\"xxx\" ></iframe>\n<div id=\"cus1\">{{msg.cus1}}</div>\n<div id=\"cus2\">{{msg.cus2}}</div>\n<div id=\"cus11\">{{msg.cus11}}</div>\n<div id=\"cus22\">{{msg.cus22}}</div>\n</div>\n\n<script>\ncshow = 1;\nlshow= 1;\nmshow=1;\nfunction searchshow() {\n    if(lshow==1){\n    lshow=0;\n      document.getElementById('devfind').style.display=\"block\";\n      document.getElementById('btndisp').style.display=\"none\";\n      document.getElementById('upsumbit').style.display=\"none\";\n\t boxOne = document.getElementById('anibox');\n\t boxOne.classList.remove('diverse');\n     document.getElementById('getsearch').style.display=\"none\";\n\t document.forms['searchdev'].submit(); \n     setTimeout(function(){ document.getElementById('anibox').classList.add('diverse'); },1000);\n     setTimeout(function(){ document.getElementById('getsearch').style.display = \"inline-block\"; },2000);\n     }\n    else{ lshow=1;\n     document.getElementById('devfind').style.display=\"none\";\n      document.getElementById('btndisp').style.display=\"block\";\n     \n     }\n}\n\t\nfunction cntshow() {\n    //cshow=document.getElementById('cntsubmit').value;\n\tboxOne = document.getElementById('anibox');\n\tboxOne.classList.remove('diverse');\n\tif(cshow==1) { \n\tdocument.getElementById(\"searchmac\").style.display=\"inline-block\";\n\t  document.getElementById('btndisp').style.display=\"none\";\n\tdocument.getElementById(\"smac\").value = \"\";\n\tdocument.getElementById(\"getsearch\").srcdoc = \"Global Search... \";\n\tdocument.getElementById(\"totdev\").srcdoc = \"CNT search\";\n\t  document.getElementById('devfind').style.display=\"block\";\n\tcshow = 0;\n\t} else { \n\t    cshow = 1;\n\t      document.getElementById('devfind').style.display=\"block\";\n    \tdocument.getElementById(\"searchmac\").style.display = \"none\";\n    \tif( document.getElementById(\"smac\").value.length > 0) {\n    \t\tdocument.forms['cntsearch'].submit();\n    \t   boxOne.classList.add('diverse');\n    \t}\n\t}   \n}\n  \nfunction hideshow(){\n//\tmshow = document.getElementById('xpcgroup').style.width;\n\tboxOne = document.getElementById('anibox');\n\tboxOne.classList.remove('diverse');\n\tif(mshow == 1){\n\t\tdocument.getElementById(\"menutable\").style.display = \"none\";\n\t\tdocument.getElementById('devfind').style.display = \"none\";\n\t\tdocument.getElementById('searsubmit').style.display = \"none\";  \n\t\tdocument.getElementById('cntsubmit').style.display = \"none\";\n\t\tdocument.getElementById('btndisp').style.display = \"none\";\n\t\tdocument.getElementById('xpcgroup').style.width = '90%';\n\t\tdocument.getElementById('xpcgroup').style.left = '3%';\n\t    mshow=0;\n\t} else\n      { \n\t    mshow=1;\n\t    document.getElementById('devfind').style.display = \"inline-block\";\n\t\tdocument.getElementById(\"menutable\").style.display = \"inline-block\";\n\t\tdocument.getElementById('searsubmit').style.display = \"inline-block\";\n\t\tdocument.getElementById('cntsubmit').style.display = \"inline-block\";\n\t\tdocument.getElementById('btndisp').style.display = \"inline-block\";\n\t\tdocument.getElementById('xpcgroup').style.width = '56%';\n\t\tdocument.getElementById('xpcgroup').style.left = '43%';\t\t\n\t}\n}\n\nfunction submitupdate(ADDDEL){\n\tdocument.getElementsByName(\"adddel\")[0].value=ADDDEL;\n\tdocument.forms['updatedev'].submit();  \n\tif(ADDDEL==\"checkdev\"){\n\t    checkc = document.getElementById(\"checkdev\");\n\t    checkc.style.background = \"yellow\";\n\t    checkc.innerHTML = \"...\";        \n\t}\n\tif(ADDDEL==\"UPDATE\"){\n\t   Success(7000); \n\t} else {\n\t    location.reload();\n\t}\n\t\n}\n\nfunction getinfo(){   \n\tdocument.getElementsByName(\"SWcmd\")[0].value = selmac+\"Sinfo\";\n\tdocument.forms['swrl'].submit();  \n\tsetTimeout(function(){ reloadipcinfo();},1000);\n\ttoomany = 0;\n}\n\nfunction drawbtn(){\n\t \n\t//ipcdisplayT = JSON.parse(document.getElementById('ipcdisplayv').innerHTML);  \n\t ipcdisplayT = JSON.parse(tempis);\n    if(selmac.length == 12)\n   \t{ rlnum = ipcdisplayT[selgroup][selmac].size;\n    \tfor(var idx = 1; idx <= rlnum; idx++) {\n\t\t\t    showBB(idx,'1');\n   \t\t    \tdrawBB(idx,'x');\n   \t\t}\n    \tfor(var idx =rlnum+1; idx <=8; idx++) {\n\t\t\t\t showBB(idx,'0');\n\t\t\t\t drawBB(idx,'x');\n\t\t\t\t }\n\t\t\n   \t}\n\tfor(var groups in ipcstatus){\n\t\n\t\tipg=ipcstatus[groups];\n\t\tfor(var macs in ipg ){\n\t\t\tif(selmac.length == 12) { if(macs != selmac) continue;}\n\t\t\tif(macs.length != 12) {continue;}\n\t\t\tselgroup = groups;\n\t\t\tstate = ipg[macs].state;\n\t\t\trlnum = ipcdisplayT[groups][macs].size;\n\t\t\tonlineid = \"devstate\" + groups + macs; \n\t\t\tif(state == \"off\" || state == \"UnAuthorization\"){ \n\t\t\t\tdocument.getElementById(onlineid).className = \"devoff ipp1\";\n\t\t\t\tfor(var idx = 1; idx <= rlnum; idx++) {\n\t\t\t\t    showBB(idx,'1');\n\t\t\t\t\tdocument.getElementById((macs+\"R\"+idx)).className = \"Relaylost\";\n\t\t\t\t\tdocument.getElementById((macs+\"N\"+idx)).innerHTML = \"\";\n\t\t\t\t\tdocument.getElementById(onlineid).innerHTML = '&#128274;UnAuthorization'; \n\t\t\t\t\t drawBB(idx,'x');\n\t\t\t\t}\n\t\t\t\tfor(var idx =rlnum+1; idx <=8; idx++) {\n\t\t\t\tshowBB(idx,'0');\n\t\t\t\tdrawBB(idx,'x');\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}\n\t\t\t\n\t\t\tif(state == \"on\" || state == \"info\"){ \n\t\t\t\tdocument.getElementById(onlineid).className = \"devlink\";\n\t\t\t\n\t\t\t\tfor(var idx = 1; idx <= rlnum; idx++) {  \n\t\t\t\t    showBB(idx,'1');\n\t\t\t\t   if(ipg[macs].power[idx-1] == \"1\") {\n\t\t\t\t   \tipcdisplayT[groups][macs].power[idx-1] = \"1\"; \n\t\t\t\t      document.getElementById((macs+\"R\"+idx)).className = \"Relayon\"; \n\t\t\t\t      drawBB(idx,\"1\");\n\t\t\t\t   }\n\t\t\t\t   if(ipg[macs].power[idx-1] == \"0\"){\n\t\t\t\t    \tipcdisplayT[groups][macs].power[idx-1] = \"0\"; \n\t\t\t\t      document.getElementById((macs+\"R\"+idx)).className = \"Relayoff\"; \n\t\t\t\t      drawBB(idx,\"0\");\n\t\t\t\t   }\n\t\t\t\t}\n\t\t\t\tfor(var idx =rlnum+1; idx <=8; idx++) {showBB(idx,'0');drawBB(idx,'x');\t}\n\t\t\t\t\n\t\t\t\tipcdisplayT[groups][macs].state = ipcstatus[groups][macs].state;   \n\t\t\t\tipcdisplayT[groups][macs].ckt = ipcstatus[groups][macs].ckt;\n\t\t\t\tipcdisplayT[groups][macs].pname = ipcstatus[groups][macs].pname;\n\t\t\t\tipcdisplayT[groups][macs].temperature = ipcstatus[groups][macs].temperature;\n\t\t\t\tipcdisplayT[groups][macs].volt = ipcstatus[groups][macs].volt;\n\t\t\t\tipcdisplayT[groups][macs].ver = ipcstatus[groups][macs].ver;\n\t\t\t\tipcdisplayT[groups][macs].cmdack = ipcstatus[groups][macs].cmdack;\n\t\t\t\tipcdisplayT[groups][macs].digest = ipcstatus[groups][macs].digest;\n\t\t\t\tipcdisplayT[groups][macs].power = ipcstatus[groups][macs].power;\n\t\t\t\n\t\t\t}\n\t\t}\n\t}\n\tif(macs.length != 12) { selmac = macs; }\n\n}// drawbtn end \nfunction showBB(idx,pstat){\n     document.getElementById(\"p6\"+idx+\"_btnf\").style.display=(pstat=='1')? \"block\":\"none\";\n    // document.getElementById(\"p61_btnf\").style.display=\"none\";\n    \n}\nfunction drawBB(idx,pstat){\n\tdoid = document.getElementById(\"Po\" +idx);\n\tif (pstat == \"0\")\n\t{\n\t\tdoid.className = \"off2\";\n\t\tdoid.parentNode.className = \"off1\";\n\t\tdoid.parentNode.parentNode.className = \"off0\";\n\n\t}\n\tif (pstat == \"1\")\n\t{\n\t\tdoid.className = \"on2\";\n\t\tdoid.parentNode.className = \"on1\";\n\t\tdoid.parentNode.parentNode.className = \"on0\";\n\t\t\t\n\t}\n\t\tif (pstat == \"x\")\n\t{\n\t\tdoid.className = \"non2\";\n\t\tdoid.parentNode.className = \"non1\";\n\t\tdoid.parentNode.parentNode.className = \"off0\";\n\t\t\t\n\t}\n\t\n}\n\nfunction seldevice(mymac,mygroup){\n\t//ipcdisplayT = JSON.parse(document.getElementById('ipcdisplayv').innerHTML); \n\t  //ipcdisplayT = JSON.parse(tempis);\n\tif(document.getElementById('searsubmit').style.display != \"none\") {\n\t   document.getElementById('btndisp').style.display=\"block\"; \n\t}\n\tdocument.getElementById('upsumbit').style.display=\"table-row\";\n\tselgroup = mygroup;\n\tselmac = (mymac.split(\"R\"))[0];\n\tif(selmac.length != 12) { return;}\n\t\tdrawbtn();\n\tsingle = 999;\n\tif(Object.keys(ipcdisplayT).length == 1){ \n\t\tsingle = Object.keys(ipcdisplayT[selgroup]).length;\n\t}\n\t\n\tif(selmac != selmacold){  \n\t\tdocument.getElementById(mymac).style.backgroundColor = \"burlywood\"; \n\t\t\n\t\tselpower = document.getElementById(\"devop\"+selmac).style;\n\t\n\t\tif(selpower.display != \"inline-block\"){ \n\t\t\tgetinfo();\n\t\t\tdocument.getElementById(\"devop\"+selmac).style.display = \"inline-block\";\n\t\t}\n\t\n\t\tif(selmacold.length == 12) {\n\t\t\tdocument.getElementById(selmacold+\"R\").style.backgroundColor = \"gainsboro\"; \n\t\t//   document.getElementById(\"devop\"+selmacold).style.display = \"none\"; \n\t\t} \n\t\n\t\tif(single != 1){ selmacold = selmac;}\n\t\tpload = ipcdisplayT[selgroup][selmac];    \n\t\t\n\t\tdocument.getElementById(\"group\").value = (selgroup !== undefined)?selgroup:\"group\";\n\t\tdocument.getElementById(\"server\").value = (pload.server !== undefined)?pload.server:\"\";\n\t\tdocument.getElementById(\"sport\").value = (pload.sport !== undefined)?pload.sport:\"1883\";\n\t\tdocument.getElementById(\"saccount\").value = (pload.saccount !== undefined)?pload.saccount:\"user\";\n\t\tdocument.getElementById(\"spasswd\").value = (pload.spasswd !== undefined)?pload.spasswd:\"password\";\n\t\tdocument.getElementById(\"devname\").value = (pload.devname !== undefined)?pload.devname:(\"ipp\" + mymac.substr(9,3));\n\t\tdocument.getElementById(\"devname\"+selmac).innerHTML = document.getElementById(\"devname\").value;\n\t\tdocument.getElementById(\"devaccount\").value= (pload.devaccount !== undefined)?pload.devaccount:\"admin\";\n\t\tdocument.getElementById(\"devip\").value = (pload.devip !== undefined)?pload.devip:\"no-ip\";\n\t\tdocument.getElementById(\"devport\").value = (pload.devport !== undefined)?pload.devport:\"no-port\";\n\t\tdocument.getElementById(\"cnt\").value = (pload.cnt !== undefined)?pload.cnt:\"2\";\n\t\tdocument.getElementById(\"devmac\").value = selmac;\n\t\tpload.devmac = selmac;\n\t\tpload.group = document.getElementById(\"group\").value;  \n\t\tpload.server = document.getElementById(\"server\").value;\n\t\tpload.sport = document.getElementById(\"sport\").value;\n\t\tpload.saccount = document.getElementById(\"saccount\").value;\n\t\tpload.spasswd = document.getElementById(\"spasswd\").value;\n\t\tpload.devaccount = document.getElementById(\"devaccount\").value;\n\t\tpload.devpasswd = document.getElementById(\"devpasswd\").value;\n\t\tpload.devmac = document.getElementById(\"devmac\").value;\n\t\tpload.cnt = document.getElementById(\"cnt\").value;\n\t\tpload.devip = document.getElementById(\"devip\").value;\n\t\tpload.devport = document.getElementById(\"devport\").value;\n\t\tdocument.getElementById(\"server\").value =(pload.cnt)?pload.server:\"\";\n\t\tdocnt();\n\t\n\t//\tdocument.getElementById('btndisp').style.display = \"block\"\n\tmshow=0;\n//\t hideshow();\n\t//   document.getElementById('devfind').style.display = \"none\";\n\t  \n\t //  lshow=1;\n\t  // cshow=1;\n\t}\n\n}\n        \nfunction docnt(){\n\tid = document.getElementById(\"cnt\").value;\n\tif(id == \"0\") {\n\t\tdocument.getElementById(\"ipgroup\").style.display = \"none\";\n\t\tdocument.getElementById(\"servergroup\").style.display = \"inline-block\";\n\t\tdocument.getElementById(\"sap\").style.display = \"table-row\";\n\t\tdocument.getElementById(\"sap1\").style.display = \"table-row\";\n\t\tdocument.getElementById(\"group\").value = (selgroup !== undefined)?selgroup:\"group\";\n\t\tdocument.getElementById(\"server\").value = document.getElementById(\"cus1\").innerHTML;\n\t\tdocument.getElementById(\"sport\").value = document.getElementById(\"cus11\").innerHTML;\n\t}\n\tif(id == \"3\") {\n\t\tdocument.getElementById(\"ipgroup\").style.display = \"none\";\n\t\tdocument.getElementById(\"servergroup\").style.display = \"inline-block\";\n\t\tdocument.getElementById(\"sap\").style.display = \"table-row\";\n\t\tdocument.getElementById(\"sap1\").style.display = \"table-row\";\n\t\tdocument.getElementById(\"group\").value = (selgroup !== undefined)?selgroup:\"group\";\n\t\tdocument.getElementById(\"server\").value = document.getElementById(\"cus2\").innerHTML;\n\t\tdocument.getElementById(\"sport\").value = document.getElementById(\"cus22\").innerHTML;\n\t}\t\n\tif(id == \"1\"){ \n\t\tdocument.getElementById(\"ipgroup\").style.display = \"none\";\n\t\tdocument.getElementById(\"servergroup\").style.display = \"none\";  \n\t\tdocument.getElementById(\"sap\").style.display = \"table-row\";\n\t\tdocument.getElementById(\"sap1\").style.display = \"table-row\";\n\t\tdocument.getElementById(\"group\").value = (selgroup !== undefined)?selgroup:\"group\";\n\t\tif(!(selmac.includes(009255)) || !(selmac.includes(009256))){\n\t\t    document.getElementById(\"sap\").style.display = \"none\";\n\t\t}\n\t}\n\tif(id == \"2\")  { \n\t\tdocument.getElementById(\"ipgroup\").style.display = \"inline-block\";\n\t\tdocument.getElementById(\"servergroup\").style.display = \"none\"; \n\t\tdocument.getElementById(\"sap\").style.display = \"none\";\n\t\tdocument.getElementById(\"group\").value = (selgroup !== undefined)?selgroup:\"group\";\n\t}\n}\n\nfunction RelaySW(selmacRX) { \n    //ipcdisplayT = JSON.parse(document.getElementById('ipcdisplayv').innerHTML);\n     //ipcdisplayT = JSON.parse(tempis);\n\tif(selmacRX.length != 14) { return;}\n\tif( document.getElementById(selmacRX).style.backgroundColor != \"burlywood\") {\n\tmacs = (selmacRX.split(\"R\"));\n\tidx = macs[1];\n\tselmac = macs[0];\n\t\n\ttry { p6_status = ipcdisplayT[selgroup][selmac].power;} \n\tcatch (error) {  p6_status = [0,0,0,0,0,0,0,0,0]; };\n\n   pset=(p6_status[idx-1] == \"1\")?\"0\":\"1\";\n  \t\tdocument.getElementsByName(\"SWcmd\")[0].value = selmacRX + \"S\" + (pset);\n  \t\tdocument.forms['swrl'].submit();  //send setpower command\n   }\n\tsetTimeout(function(){ reloadipcinfo(); },1000);\n}\n     \nfunction isEmpty(obj) {   \n\tfor(var key in obj) {\n\t\tif(obj.hasOwnProperty(key)){return false;}\n\t}\n\treturn true;\n} \nfunction setp(idx){selmacRX=selmac+\"R\"+idx;RelaySW(selmacRX);}\n\nfunction reloadipcinfo(){ \n\t//Ajax newstatus\n    var xmlhttp = new XMLHttpRequest();\n    xmlhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n\t\tdocument.getElementById(\"newstatus\").innerHTML = this.responseText;\n\n\t\tdevget = this.responseText;  if(devget.length<3){ return;}\n\t\tipcstatus = JSON.parse(devget);\n\t\tdrawbtn();\n\t\t}; \n    }\n    xmlhttp.open(\"GET\", \"newstatus?a=\" + toomany, true);\n    xmlhttp.send();\n    repeat();\n}  \n       \nfunction RelayN(selmacn){return;}\n\nfunction jump(){\n    if(document.getElementById('devip').value !== \"\"){\n        window.open('http://'+document.getElementById('devip').value, \"_Blank\");\n    }\n}\n\nfunction Success(x) {\n\tvar name;\n\tname=\"Loading!!...\";\n\t$r = jQuery.noConflict();\n\t$r(document).ready(function() { \n\t\t $r.blockUI({\t    \n\t\t message: '<div > <div data-loader=\"circle-side\"></div><div>'+name+'</div> </div>'\n\t\t  }); \n\t\tsetTimeout(function(){\n\t\t\t$r.unblockUI({\n\t\t\t\tonUnblock: function(){location.reload();} });\n\t\t},x);\n\t});\n}\n\nfunction repeat(){ \n  if(toomany++ < 5){ setTimeout(function(){ reloadipcinfo(); },2000);}\n  if(toomany++ >= 5){ setTimeout(function(){ reloadipcinfo(); },toomany * 100 + 2000);}\n}\n\ndocument.forms['getipc'].submit();\ndocument.getElementById('btndisp').style.display=\"none\";\ndocument.getElementById('upsumbit').style.display=\"none\";\ndocnt();\nsetTimeout(function(){ getinfo();},1200);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 550,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba2f9277.e6188",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "func": "var fs = global.get('fs');\nvar info={};\niflow=\"IPC/projects/IPPowerCenter/flow.json\";\nvar devmac1=msg.mac;\n\nif(flow.get(\"iflow\")=== undefined){ flow.set(\"iflow\",iflow);}\niflowx=flow.get(\"iflow\");\nipcinfo1 = flow.get(\"ipcinfo\");\nipcinfo=JSON.parse(ipcinfo1);\n\nfor(var groups in ipcinfo) {  \ngpc=ipcinfo[groups];\nfor(var maci in gpc) {  \nif(maci==devmac1) {\ninfo=gpc[maci];\n}}}\n\nif(msg.adddel === \"UPDATE\") {\nfs.access(iflow , (err) => {\nif (!err) {\niflowinfo = fs.readFileSync(iflow,'utf8');\n\nppp=JSON.parse(iflowinfo);\n\nif(info.server !== 'myipedit.com') {\nfor(i=0; i < ppp.length; i++) {\nif(ppp[i].id==='e315f61e.588b08' && info.cnt==='3' ){\nif(ppp[i].broker !== info.server){\nppp[i].broker = info.server;\n} else {\nreturn;\n}}\nelse if(ppp[i].id==='cf328753.8bd0e8' && info.cnt==='0'){\nif(ppp[i].broker !== info.server){\nppp[i].broker = info.server;\n} else {\nreturn;\n}}}}\n\nsss=JSON.stringify(ppp);\n\nfs.writeFile(iflow, sss,function (error) {\nconsole.log(error)\nconsole.log('write ok')\n})     \nnode.send(msg);\nreturn;\n}\nreturn;\n});\n} else {\nreturn;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 555,
+        "y": 217,
+        "wires": [
+            [
+                "aea06a76.4d5688"
+            ]
+        ]
+    },
+    {
+        "id": "b1eec396.8762",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "func": "var itoken=JSON.parse(msg.payload);\npaytoken=itoken.access_token;\nmsg.headers = {\n    \"Authorization\":\"Bearer \"+paytoken,\n    \"Node-RED-Deployment-Type\":\"reload\"\n}    \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 995,
+        "y": 217,
+        "wires": [
+            [
+                "b9000b65.c9be88"
+            ]
+        ]
+    },
+    {
+        "id": "b9000b65.c9be88",
+        "type": "http request",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1/admin/flows",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1145,
+        "y": 217,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d5dd04c.38dbf",
+        "type": "http request",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1/admin/auth/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 845,
+        "y": 217,
+        "wires": [
+            [
+                "b1eec396.8762"
+            ]
+        ]
+    },
+    {
+        "id": "aea06a76.4d5688",
+        "type": "function",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "func": "type=msg.payload;\nmsg.topic=type;\nmsg.payload= {\n    'client_id': 'node-red-admin',\n     'grant_type': 'password',\n     'scope': '*',\n     'username': 'admin',\n     'password': '12345678',\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 695,
+        "y": 217,
+        "wires": [
+            [
+                "2d5dd04c.38dbf"
+            ]
+        ]
+    },
+    {
+        "id": "67ffebc8.9c2054",
+        "type": "mqtt in",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "topic": "mac/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5b070259.f99cdc",
+        "x": 72,
+        "y": 320,
+        "wires": [
+            [
+                "7ab245f2.2cc5cc"
+            ]
+        ]
+    },
+    {
+        "id": "20d5b1d3.f3d3fe",
+        "type": "mqtt out",
+        "z": "32aa2d05.3790a2",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "5b070259.f99cdc",
+        "x": 530,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "27a66ac1.f08016",
+        "type": "http in",
+        "z": "32aa2d05.3790a2",
+        "name": "GET IPC",
+        "url": "ui/ipc",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 80,
+        "y": 60,
+        "wires": [
+            [
+                "b5a8f612.f16d58"
+            ]
+        ]
+    },
+    {
+        "id": "c7e8c68e.aa1958",
+        "type": "mqtt-aviosys in",
+        "z": "32aa2d05.3790a2",
+        "name": "aviosys in",
+        "topic": "mac/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f66db79.9b04c48",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "7ab245f2.2cc5cc"
+            ]
+        ]
+    },
+    {
+        "id": "21a3e8a5.376028",
+        "type": "mqtt-aviosys out",
+        "z": "32aa2d05.3790a2",
+        "name": "aviosys out",
+        "topic": "",
+        "qos1": "0",
+        "retain": "false",
+        "broker": "f66db79.9b04c48",
+        "x": 540,
+        "y": 500,
+        "wires": []
+    }
+]
